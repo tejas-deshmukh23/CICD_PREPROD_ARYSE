@@ -1,0 +1,243 @@
+.container {
+  max-width: 432px;
+  margin: 0px auto;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  /* background: #f3f4f6; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align items vertically */
+  margin-bottom: 30px;
+  /* border-radius: 15px; */
+}
+ @media screen {
+  .container {
+  width: auto;
+  height: 100vh;
+  /* height: 750px; */
+}
+ }
+
+.headingDiv { 
+  width: 100%;
+  height: auto;
+  margin-left: 4rem;
+  display: flex;
+  width: 100%; /* Ensure the heading div takes full width */
+  justify-content: left; /* Align heading to the left */
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  background: #F7F6FD;
+  /* background: linear-gradient(to right, #f3b2f5, #a78afa); */
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Make the button stick to the bottom */
+  height: 350px; /* Allow card to take the full height of its container */
+}
+
+.row {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+.item {
+  width: 100%; /* Make item take full width within its row */
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0000007A;
+}
+
+.value {
+  margin-top: 5PX;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  /* background-color: #6039D254 33%; */
+  background-color: #e3d9f4;
+  /* color: #00000057; */
+  color: #333;
+  margin-top: 8px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.radioLabel {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radioText {
+  font-size: 14px;
+}
+
+.btnContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.nextBtn {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #6039D2;
+  border: none;
+  width: 100%;
+  color: white;
+  cursor: pointer;    
+}
+
+.payBtn:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  height: 2px;
+}
+
+.error {
+  color: #ff3333;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.success {
+  color: #00cc66;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100% !important;  /* Set container width to 100% */
+    min-height: 650px;  /* Keep height consistent */
+    padding: 15px;  /* Add padding for small devices */
+  }
+
+  .headingDiv {
+    margin-left: 0;  /* Remove left margin for smaller screens */
+    justify-content: center;  /* Center the heading */
+    text-align: center;  /* Center heading text */
+  }
+
+  .heading {
+    font-size: 18px;  /* Adjust heading size */
+    margin-bottom: 12px;  /* Reduce margin */
+  }
+
+  .card {
+    width: 100%;  /* Set card width to 100% for smaller screens */
+    max-width: none;  /* Remove max-width restriction */
+    height: auto;  /* Set height to auto */
+    padding: 15px;  /* Reduce padding */
+    margin-top: 15px;  /* Add margin for spacing */
+  }
+
+  .row {
+    flex-direction: column;  /* Stack items vertically */
+    margin-top: 10px;
+  }
+
+  .item {
+    width: 100%;  /* Ensure item takes full width */
+    margin-bottom: 10px;  /* Add space between items */
+  }
+
+  .label {
+    font-size: 14px;  /* Reduce font-size for smaller devices */
+  }
+
+  .value {
+    font-size: 15px;  /* Adjust value font size */
+  }
+
+  .input {
+    font-size: 14px;  /* Adjust input field font size */
+    padding: 8px;  /* Reduce padding */
+  }
+
+  .radioGroup {
+    margin-top: 10px;  /* Reduce space between radio options */
+  }
+
+  .radioLabel {
+    font-size: 16px;  /* Adjust radio label font size */
+  }
+
+  .radioText {
+    font-size: 12px;  /* Reduce radio option font size */
+  }
+
+  .btnContainer {
+    padding: 15px 25px;  /* Reduce button container padding */
+  }
+
+  .nextBtn {
+    font-size: 14px;  /* Reduce font-size for button */
+    padding: 12px;  /* Reduce button padding */
+  }
+
+  .footer {
+    font-size: 10px;  /* Reduce footer font size */
+    margin-top: 15px;  /* Add top margin for spacing */
+  }
+
+  .error, .success {
+    font-size: 12px;  /* Reduce error and success font size */
+  }
+}

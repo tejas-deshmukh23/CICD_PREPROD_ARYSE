@@ -1,0 +1,524 @@
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #F7F6FD;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.parentContainer{
+    background: linear-gradient(45deg, #6039D2, #D6C8FF);
+}
+.mainHeaderPart {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    margin: 0 0 30px 0;
+    
+}
+
+.topchildren {
+    width: 100%;
+    height: auto;
+    height: 90px;
+    /* border-bottom-left-radius: 500px; */
+    /* border-bottom-right-radius: 500px; */
+    /* background-color: #6039D2; */
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 100%;
+    /* height: 150px; */
+    margin: 25px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+
+.logo2 {
+    width: auto;
+    height: auto;
+    /* border-radius: 326.24px; */
+    /* border-radius: 50%; */
+
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 326.24px;
+    /* border-radius: 50%; */
+
+}
+
+.logoName {
+    color: black;
+    font-size: 24px;
+    font-family: Outfit;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.mainForm {
+    width: 100%;
+    max-width: 412px;
+    min-width: 300px;
+    height: auto;
+    /* background: #f8b944; */
+    color: black;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* progress bar container */
+.header {
+    align-items: center;
+    height: 100px;
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+
+
+.progressBarContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 0 0px 0 85px;
+    /* margin: 30px 0px 0px 16px; */
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.progressBar {
+    width: 80px;
+    height: 2px;
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.progressBarlast {
+    position: relative;
+    flex: 1;
+    height: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: none;
+}
+
+.progressBarFill {
+    height: 2px;
+    width: 100%;
+    /* background-color: #6039d2; */
+    background: #FABA44;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+.progressBarFill2 {
+    background: #FABA44;
+    width: 100%;
+    height: 2px;
+    background-color: none;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+.outerCrcileLine{
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-20%);
+    top: -14px;
+    left: -30px;
+    align-items: center;
+    justify-content: center;
+}
+.outerCrcileLine2{
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-20%);
+    top: -14px;
+    left: -30px;
+    align-items: center;
+    justify-content: center;
+}
+.outerCrcileLine3{
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateX(-20%);
+    top: -10px;
+    left: -18px;
+    align-items: center;
+    justify-content: center;
+}
+.stepNumber {
+    position: relative;
+    text-align: center;
+    top: 3.2px;
+    left: 3.5px;
+    /* transform: translateX(-50%); */
+    color: #000;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    background: #FABA44;
+}
+.stepNumber2 {
+    position: relative;
+    text-align: center;
+    top: 3.2px;
+    left: 3.5px;
+    /* transform: translateX(-50%); */
+    color: #000;
+    font-weight: bold;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    background: #FABA44;
+}
+
+.stepNumberLast {
+    position: absolute;
+    text-align: center;
+    top: 3.2px;
+    left: 2.2px;
+    /* transform: translateX(-50%); */
+    color: #000;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    /* background: white; */
+}
+.progressBarHeading{
+    position: relative;
+    top: 25px;
+    left: -50px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.progressBarHeading2{
+    position: relative;
+    top: 25px;
+    left: -52px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.progressBarHeading3{
+    position: relative;
+    top: 35px;
+    left: -45px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.headering {
+    padding: 0 20px;
+    font-size: 12px;
+    height: 30px;
+}
+
+.formheading {
+   color: #000;
+    word-wrap: break-word;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.form {
+    background: linear-gradient(#fff, #d6c8ff);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: auto;
+    padding: 10px;
+}
+
+.fields {
+    background: #fff;
+    border: 1px solid #6039d2;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px 25px 15px;
+    display: flex;
+}
+
+/* Error field styling - RED BORDER */
+.errorField {
+    border: 2px solid red !important;
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+}
+
+.fieldName1 {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+.inputfield {
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #191A23;
+}
+
+/* button css */
+.btn {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+}
+
+.backbtn {
+    width: 100%;
+    /* height: 60px; */
+    /* background-color: #FFF; */
+    color: #191A23;
+    text-align: center;
+    /* border-radius: 30px; */
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 15px;
+    /* border: 1px solid rgba(122, 122, 122, 0.18); */
+}
+.nextbtn {
+    width: 100%;
+    /* height: 60px; */
+    padding: 15px;
+    background-color: #6039d2;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    /* float: right; */
+    cursor: pointer;
+
+}
+
+.emptyspace {
+    width: 5%;
+}
+.suggestionBox {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #6039D2;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    /* make sure it appears on top */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+    transform: translateX(-25px) translateY(55px);
+    padding: 10px 0px 21px 0px;
+    border-radius: 10px;
+}
+.inputfieldSuggestion{
+border: none;
+    outline: none;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #191A23;
+}
+.inputfieldSuggestion :hover{
+border: none;
+    outline: none;
+}
+.inputfieldSuggestion :active{
+border: none;
+    outline: none;
+}
+.fields {
+    position: relative;
+}
+.suggestionItem {
+  position: relative;
+  transform: translate(-20px, 0px);
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  list-style: disc inside; 
+}
+.suggestionItem::marker {
+  color: #f9ba45;
+  padding-left: 0; 
+
+  font-size: 1.5em; 
+}
+/* On hover */
+.suggestionItem:hover {
+  background-color: #f0f0f0;
+  color: #333;
+  /* background: #FABA44;
+    border-radius: 10px; */
+}
+
+/* Optional: If you're managing selected state in JS, you can use a class */
+.selectedItem {
+  background-color: #007bff;  /* or your theme color */
+  color: white;
+}
+.fields2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 0px 25px;
+    /* gap: 10px; */
+    border-radius: 8px;
+    border: 1px solid #6039D2;
+    background: #FFF;
+    margin-top: 30px;
+    position: relative;
+}
+.fieldName {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Outfit;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+.dropdownList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #6039D2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 1px;
+    overflow: hidden;
+    padding: 7px 0px;
+}
+
+.dropdownOption {
+    margin: 0px 10px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* border-bottom: 1px solid #7C7C7C; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333;
+}
+
+.dropdownOption:last-child {
+    border-bottom: none;
+}
+
+.dropdownOption:hover {
+    background: #FABA44;
+    border-radius: 10px;
+}
+
+.dropdownOption:active {
+    background: #FABA44;
+    border-radius: 10px;
+}
+.inputfield1 {
+    color: #191A23;
+    border: none;
+    outline: none;
+    width: 100%;
+    /* padding: 10px 40px 0px 0; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.inputfield1::placeholder {
+  color: #191A23;  
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+/* Icon container inside input */
+.iconContainer {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: #F3F3F3; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.iconInput {
+    /* width: 11px; */
+    /* height: 6.78px; */
+    font-size: 14px;
+    color: #7C7C7C;
+}

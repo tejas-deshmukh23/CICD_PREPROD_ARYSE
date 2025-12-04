@@ -1,0 +1,506 @@
+.container-block{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+}
+.cardForm-block {
+  padding-left: 5rem;
+  padding-top: 30px;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #F7F6FD;
+  min-height: 472px;
+  justify-items: center;
+  height: 90vh;
+}
+
+
+.final-offer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+}
+
+.final-card{
+  width: 432px;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 550px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f6fd;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.LogoPart-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ .header-block {
+  margin-top: -20px;
+  margin-bottom: -13px; 
+}
+.card-block{
+  width: 432px;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100vh;
+}
+.cardForm-block {
+  padding-left: 5rem;
+  padding-top: 30px;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #F7F6FD;
+  min-height: 472px;
+  justify-items: center;
+  height: 90vh;
+}
+
+.title {
+  font-size: 16px;
+  color: #777777;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.loanDetails {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.loanAmount, .tenure, .interestRate {
+  font-size: 16px;
+  color: #777777;
+  margin: 10px 0;
+}
+
+.loanAmount strong, .tenure strong, .interestRate strong {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Professional Success Checkmark Styles */
+.professionalCheckmarkContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Updated styling from KFS Completed page */
+.status-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 30px;
+}
+
+.status-completed {
+  background: linear-gradient(45deg, #10B981, #059669);
+  color: white;
+  animation: completedPulse 2s ease-in-out infinite;
+}
+
+@keyframes completedPulse {
+  0%, 100% { 
+    transform: scale(1); 
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); 
+  }
+  50% { 
+    transform: scale(1.05); 
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); 
+  }
+}
+
+/* Keep original styles for backward compatibility */
+.successCircle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 4px 20px rgba(16, 185, 129, 0.25),
+    0 2px 8px rgba(16, 185, 129, 0.15);
+  animation: professionalBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  transform: scale(0);
+  z-index: 2;
+}
+
+.checkmarkProfessional {
+  width: 24px;
+  height: 40px;
+  border: solid #ffffff;
+  border-width: 0 3.5px 3.5px 0;
+  transform: rotate(45deg);
+  animation: professionalDraw 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.successRipple {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #10b981;
+  border-radius: 50%;
+  animation: professionalRipple 1.5s ease-out 0.8s forwards;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Professional Keyframe Animations */
+@keyframes professionalBounce {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes professionalDraw {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 12px;
+    height: 0;
+    opacity: 0.7;
+  }
+  100% {
+    width: 24px;
+    height: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes professionalRipple {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+  
+ .loan-head {
+  margin-top: -20px;
+  margin-bottom: -13px; 
+}
+
+.hdb-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ .cardForm-card {
+  padding-left: 5rem;
+  padding-top: 30px;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #F7F6FD;
+  min-height: 472px;
+  justify-items: center;
+  height: 90vh;
+}
+
+.content-card {
+  padding: 20px;
+  align-content: center;
+}
+
+.para-card{
+  color: #777777;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.btnContainer{
+    position: fixed;
+    padding: 3px;
+    width: 432px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    transform: translate(-0px); 
+    justify-items: center;
+      z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.nextBtn {
+    width: 395px;
+  margin: 3px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 600;
+  background: #6039D2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nextBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .btnContainer{
+    width: auto;
+  }
+  .nextBtn {
+    padding: 10px 0; /* Smaller padding */
+    font-size: 13px; /* Even smaller font size */
+  }
+  
+  .professionalCheckmarkContainer {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .status-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  
+  .successCircle {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .checkmarkProfessional {
+    width: 20px;
+    height: 35px;
+    border-width: 0 3px 3px 0;
+  }
+  
+  .successRipple {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+}
+
+.fill-form-block {
+    margin-bottom: 25px;
+}
+
+.enter-field-block, .select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    box-shadow: 5px 5px 5px #eee;
+}
+
+.Three {
+    max-width: 330px;
+    width: 77%;
+    height: 550px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    padding: 40px;
+    background-color: #F7F6FD;
+    margin-top: 160px;
+  }
+
+.viewloan-card {
+    font-weight: 500;
+    color: #777777;
+    font-size: 0.9rem;
+  }
+
+.field-card{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #777777;
+  }
+
+@media (max-width: 400px){
+ .Three {
+    max-width: 330px;
+    width: 86%;
+    margin-left: 30px;
+    height: 550px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    padding: 40px;
+    background-color: #F7F6FD;
+    margin-top: 160px;
+  }
+}
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 2%;
+  }
+  
+.fill-form {
+      margin-bottom: 25px;
+  }
+
+.error-msg {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      display: block;
+  }
+
+.section {
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #000;
+  margin-top: 50px;
+}
+
+.labelBlock {
+  width: 170px; /* fixed width */
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  color: #000;
+}
+
+.sublabel {
+  font-size: 12px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.divDout {
+  width: 10px; /* fixed width for colon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerDout {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+}
+
+.divValue {
+  width: 120px; /* fixed width for value */
+  white-space: nowrap;
+  padding-left: 25px;
+}
+
+.value {
+  font-weight: bold;
+  color: #252424;
+}
+
+.form-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #6039D2;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+ 
+.Long-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}

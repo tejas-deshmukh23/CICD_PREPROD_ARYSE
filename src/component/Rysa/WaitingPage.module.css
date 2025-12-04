@@ -1,0 +1,158 @@
+.container {
+    /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e478f0, #9e8bf6);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  /* border-radius: 12px; */
+  width: 432px;
+  margin: 0 auto;
+}
+
+.iconWrapper {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  border-top: 4px solid white;
+border-right: 0px solid transparent;
+border-bottom: 4px solid white;
+border-left: 4px solid white;
+  /* border-color: white transparent white white; */
+  /* border-top: 10px solid white;  Only top border to show "gap" circle */
+  animation: spin 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.waitingText::after {
+  content: '.';
+  animation: dots 3s steps(4, end) infinite;
+}
+
+.waitingText {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 80%;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  margin: 10px 0;
+}
+
+.subText {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* Circle Rotation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Typing Dots Animation */
+@keyframes dots {
+  0% {
+    content: '.';
+  }
+  25% {
+    content: '..';
+  }
+  50% {
+    content: '...';
+  }
+  75% {
+    content: '....';
+  }
+  /* 100% {
+    content: '.';
+  } */
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e478f0, #9e8bf6);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.iconWrapper {
+  width: 120px;
+  height: 120px;
+  border: 10px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotate 2s linear infinite;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.waitingText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.line {
+  width: 80%;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  margin: 10px 0;
+}
+
+.subText {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Animations */
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */ 

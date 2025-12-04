@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e478f0, #9e8bf6);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  width: 432px;
+  margin: 0 auto;
+  padding: 20px;
+  /* border-radius: 12px; */
+}
+
+/* ✅ Animated SVG check wrapper */
+.animatedCheck {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  animation: popIn 0.3s ease-out;
+}
+
+/* ✅ Circle behind tick */
+.checkCircle {
+  stroke: #ffffff;
+  stroke-width: 0;
+  fill: #4CA800;
+  opacity: 0.9;
+}
+
+/* ✅ Animated tick stroke */
+.checkmark {
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: drawCheck 0.9s ease forwards;
+}
+
+/* ✅ Tick draw animation */
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ✅ Pop-in animation for check icon */
+@keyframes popIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.ref {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.message {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ✅ Responsive design for small screens (phones) */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    padding: 16px 12px;
+    /* border-radius: 10px; */
+  }
+
+  .animatedCheck {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+
+  .checkCircle {
+    stroke-width: 2;
+  }
+
+  .checkmark {
+    stroke-width: 4;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .ref {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .message {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

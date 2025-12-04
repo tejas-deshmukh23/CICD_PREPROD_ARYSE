@@ -1,0 +1,302 @@
+/* ────────────────────────
+   Base layout
+────────────────────────── */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  /* padding: 20px; */
+
+}
+
+.card {
+  width: 432px;
+  /* border-radius: 16px; */
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  /* border-top-left-radius: 15px; */
+  /* border-top-right-radius: 15px; */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* border-top-left-radius: 6px;
+  border-top-right-radius: 6px; */
+   width: 432px;
+  height: 100vh;
+  min-height: 655px;
+  margin: 0 auto;
+  position: relative;
+}
+.numberOneDiv {
+  width: 432px;
+  height: 200px;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  /* border-top-left-radius: 16px; */
+  /* border-top-right-radius: 16px; */
+  
+}
+
+.numberTwoDiv {
+  width: 432px;
+  height: calc(100vh - 200px); /* 30px overlap included */
+  background-color: #F7F6FD;
+  margin-top: -30px; /* to overlap 30px on numberOneDiv */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+/* ────────────────────────
+   Hero banner
+────────────────────────── */
+.hero1 {
+  /* position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px; */
+  position: relative;
+  /* background: linear-gradient(135deg, #f26bff 0%, #7b5dff 100%);  */
+  padding: 24px 20px 10px 20px;
+  /* min-height: 190px; */
+  color: #ffffff;
+}
+
+.heroText1 {
+  padding-top: 20px;
+  z-index: 2;
+  text-align: left;
+  /* position: relative;
+  z-index: 2; */
+}
+
+.title1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  /* font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2; */
+}
+
+.subtitle1 {
+  font-size: 14px;
+  margin-top: 4px;
+  /* font-size: 14px;
+  margin-top: 4px; */
+}
+
+.progressBar1 {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10px; */
+  gap: 6px;
+  /* justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 6px; */
+}
+
+.dot1,
+.dotActive1 {
+  margin-top: 2rem;
+  width: 28px;
+  height: 6px;
+  border-radius: 2px;
+  background: #ffffff66;
+  cursor: pointer;
+}
+
+.dotActive1 {
+  background: #ffffff;
+   /* background: #ffffff; */
+}
+
+.imgWrap1 {
+  position: absolute;
+  margin-top: 60px;
+  right: 2px;
+  bottom: 0px;
+  width: 180px;
+  height: 170px;
+  overflow: none;
+  border-radius: 8px;
+}
+
+/* ────────────────────────
+   Form container
+────────────────────────── */
+.formBlock {
+  background: #F7F6FD;
+  border-radius: 16px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+  padding-top: 24px;
+  height: 75vh;
+  /* min-height: 650px; */
+}
+
+.form {
+  margin-bottom: 10px;
+  padding: 0 20px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  gap: 22px;
+  /* background-color: #F7F6FD; */
+  /* background-color: red; */
+  height: 400px;
+}
+
+/* ────────────────────────
+   Input fields
+────────────────────────── */
+.field {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 46px 12px 14px;     /* right‑padding for icon        */
+  font-size: 14px;
+  color: black;
+  /* color: #808080; */
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  background: #ffffff;
+  outline: none;
+}
+
+.input:focus {
+  border-radius: 10px;
+  color: black;
+  border-color: black;
+  box-shadow: 2px 2px 2px 2px #7b5dff33;
+}
+
+/* right‑side icon */
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  color: #B8B8B8;
+  pointer-events: none;
+}
+
+/* ────────────────────────
+   Disclaimer / note
+────────────────────────── */
+.note {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.45;
+}
+
+.note a {
+  color: #7b5dff;
+  text-decoration: none;
+}
+
+.calc {
+  font-weight: 600;
+}
+
+/* ────────────────────────
+   CTA button
+────────────────────────── */
+.btnContainer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+}
+
+.nextBtn {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+  background-color: #6039D2;
+  border: none;
+  width: 100%;
+  color: white;
+  cursor: pointer;    
+}
+
+.nextBtn:hover {
+  opacity: 0.9;
+}
+/* Mobile responsiveness */
+
+/* .nextBtn {
+  margin-top: 16px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 600;
+  background: #7b5dff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nextBtn:hover {
+  opacity: 0.9;
+} */
+@media (max-width: 480px) {
+   .numberOneDiv {
+  width: 100%;                  /* Ensures the div takes up the full width of its container */
+  max-width: 432px;             /* Caps the width to 432px on larger screens */
+  height: 200px;                /* Fixed height */
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  /* border-top-left-radius: 15px; */
+  /* border-top-right-radius: 15px; */
+  box-sizing: border-box;       /* Includes padding and border in the element's total width and height */
+  margin: 0 auto;               /* Centers the div horizontally */
+}
+    .numberTwoDiv {
+    width: 100%;
+    border-radius: 0;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+
+  .numberTwoDiv {
+    margin-top: -20px; /* slightly reduce overlap */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .imgWrap {
+    width: 140px;
+    height: 130px;
+    right: 0px;
+    bottom: -5px;
+    /* right: -12px; */
+  }
+
+  .hero1 {
+    /* padding-top: 28px; 28*/
+    padding: 20px 16px 35px;
+  }
+
+  .title {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+}

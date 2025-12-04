@@ -1,0 +1,362 @@
+/* Base styles - Desktop */
+.Four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F7F6FD;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.selfie-block {
+  width: 432px;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: auto;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.selfie-card {
+  width: 432px;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 750px;
+  box-sizing: border-box;
+}
+
+.selfieForm-card {
+  padding-left: 5rem;
+  padding-top: 30px;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #F7F6FD;
+  min-height: 472px;
+  justify-items: center;
+  height: 118vh;
+  box-sizing: border-box;
+  
+}
+
+.selfiecontent-card {
+  padding: 20px;
+  align-content: center;
+  box-sizing: border-box;
+  padding-top: 120px; /* Space for fixed icon */
+}
+
+.LogoPart-selfie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.header-selfie {
+  margin-top: -20px;
+  margin-bottom: -13px;
+}
+
+.selfie-box {
+  align-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Icon ko center mein fixed position - same as KFS page */
+.selfie-icon-section {
+  position: absolute;
+  top: 180px; /* Fixed position from top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 10;
+}
+
+.selfie-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.selfie-circle-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg, #6039D2, #8B5FD6);
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: pulseCircle 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulseCircle {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.3; }
+}
+
+.texthead h3, p {
+  text-align: center;
+}
+
+.next-button-box {
+  position: fixed;
+  padding: 3px;
+  width: 432px;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  justify-content: center;
+  transform: translate(-20px);
+  z-index: 999;
+  display: flex;
+}
+
+.selfie-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #6039D2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #6039D2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Long-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.selfie-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selfie-block.camera-active {
+  height: auto;
+  min-height: 100vh;
+  max-height: none;
+}
+
+.selfie-card.camera-active {
+  min-height: auto;
+  height: auto;
+}
+
+.selfieForm-card.camera-active {
+  height: auto;
+  min-height: auto;
+  padding-bottom: 120px;
+}
+
+.camera-container {
+  scroll-margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVE - FULL SCREEN WIDTH */
+@media screen and (max-width: 768px) {
+  .Four {
+    padding: 0; /* Remove all padding */
+    margin: 0;
+    width: 100vw;
+    background: linear-gradient(to right, #f3b2f5 50%, #a78afa); /* Same as container background */
+  }
+
+  .selfie-block {
+    width: 100vw; /* Full viewport width */
+    height: 100vh;
+    margin: 0;
+    border-radius: 0; /* Remove border radius for full screen */
+  }
+
+  .selfie-card {
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    border-radius: 0; /* Remove border radius for full screen */
+  }
+
+  .selfieForm-card {
+    /* Keep same padding proportions */
+    padding-left: 5rem;
+    padding-top: 30px;
+    padding: 0;
+    /* Same everything else */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #F7F6FD;
+    min-height: 472px;
+    justify-items: center;
+    height: 118vh;
+  }
+
+  .selfiecontent-card {
+    padding: 20px; /* Keep same padding */
+    align-content: center;
+    padding-top: 120px; /* Keep space for fixed icon */
+  }
+
+  .header-selfie {
+    margin-top: -20px; /* Keep same margins */
+    margin-bottom: -13px;
+  }
+
+  .texthead h3, p {
+    text-align: center; /* Keep same alignment */
+  }
+
+  .Long-button {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Remove margins */
+    right: 0;
+    width: 100vw; /* Full width */
+    padding: 40px; /* Keep same padding */
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    margin: 0; /* Remove margin */
+  }
+
+  .next-button-box {
+    width: 100vw; /* Full width */
+    left: 0;
+    right: 0;
+    transform: none; /* Remove transform */
+    padding: 3px; /* Keep same padding */
+    margin: 0; /* Remove margin */
+  }
+
+  /* Camera specific - keep proportions */
+  .camera-container {
+    margin: 15px 0;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .camera-container video {
+    width: 100%;
+    height: 300px; /* Fixed height like desktop */
+    object-fit: cover;
+  }
+}
+
+/* For very small screens - full width maintained */
+@media screen and (max-width: 480px) {
+  .Four {
+    padding: 0;
+    width: 100vw;
+  }
+
+  .selfie-block {
+    width: 100vw;
+  }
+
+  .selfie-card {
+    width: 100vw;
+  }
+
+  .Long-button {
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+  .next-button-box {
+    width: 100vw;
+  }
+}
+
+/* For screens smaller than 432px - full width maintained */
+@media screen and (max-width: 432px) {
+  .Four {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .selfie-block {
+    width: 100vw;
+  }
+  
+  .selfie-card {
+    width: 100vw;
+  }
+  
+  .selfiecontent-card {
+    padding: 15px; /* Slightly reduce padding */
+    padding-top: 120px; /* Keep space for icon */
+  }
+}
+
+/* Prevent horizontal scroll on all devices and remove default margins */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Make images responsive while maintaining aspect ratio */
+.selfie-box img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.LogoPart-selfie img {
+  max-width: 100%;
+  height: auto;
+}

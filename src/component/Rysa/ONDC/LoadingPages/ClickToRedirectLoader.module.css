@@ -1,0 +1,537 @@
+/* Main container - full screen */
+/* .loaderContainer {
+  width: 100%;
+  max-width: 412px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+}
+.content {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 60px 0;
+}
+.timerWrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purpleGlow {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, 
+    rgba(214, 200, 255, 0.5) 0%, 
+    rgba(96, 57, 210, 1) 80%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  animation: pulse 3s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+.sunGlow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+    rgba(250, 186, 68, 0.25) 0%,
+    rgba(250, 186, 68, 1) 100%,
+    transparent 70%
+  );
+  filter: blur(25px);
+  left: 50%;
+  top: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+  transform-origin: 50% 190px;
+  z-index: 1;
+}
+.timerCircle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.progressRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+.progressRingCircle {
+  transition: stroke-dashoffset 1s linear;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+.timerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.secondsNumber {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 100%;
+}
+.secondsLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 5px;
+  line-height: 18px;
+}
+.factContainer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 5px 20px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+.factContainer.factVisible {
+  transform: translate(0px, -30px);
+  opacity: 1;
+}
+.factTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 8px 0;
+}
+.factText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18px;
+  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
+} */
+/* AnimationLoadingpage.module.css */
+
+/* Main container - full screen */
+.loaderContainer {
+  width: 100%;
+  max-width: 412px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin: 0px auto;
+}
+
+/* Content wrapper */
+.content {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title - "Please wait" */
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+/* Subtitle text */
+.subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 60px 0;
+}
+
+/* Timer wrapper - contains all timer elements */
+.timerWrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Purple gradient glow background with pulse */
+.purpleGlow {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, 
+    rgba(214, 200, 255, 0.5) 0%, 
+    rgba(96, 57, 210, 1) 80%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  animation: pulse 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Pulse animation for purple glow */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Sun glow that rotates clockwise - 60 seconds full rotation */
+.sunGlow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+    rgba(250, 186, 68, 0.25) 0%,
+    rgba(250, 186, 68, 1) 100%,
+    transparent 70%
+  );
+  filter: blur(25px);
+  left: 50%;
+  top: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+  transform-origin: 50% 190px;
+  z-index: 1;
+  animation: rotateSun 60s linear infinite;
+}
+
+/* Sun rotation animation - clockwise 360 degrees in 60 seconds */
+@keyframes rotateSun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Timer circle container */
+.timerCircle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* SVG progress ring */
+.progressRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+
+/* Static background circle */
+.progressRingBg {
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 2;
+  fill: transparent;
+}
+
+/* Animated progress circle - clockwise from full to empty */
+.progressRingCircle {
+  stroke: white;
+  stroke-width: 3;
+  fill: transparent;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 0;
+  animation: progressCircle 60s linear infinite;
+}
+
+/* Progress circle animation - empties in 60 seconds */
+@keyframes progressCircle {
+  from {
+    stroke-dashoffset: 565.48;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Timer text container */
+.timerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Seconds number - counts down using animation */
+.secondsNumber {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 100%;
+}
+
+.secondsNumber::after {
+  content: '60';
+  animation: countdownContent 60s steps(60) forwards;
+}
+
+/* Countdown animation */
+@keyframes countdownContent {
+  0% { content: '60'; }
+  1.67% { content: '59'; }
+  3.33% { content: '58'; }
+  5% { content: '57'; }
+  6.67% { content: '56'; }
+  8.33% { content: '55'; }
+  10% { content: '54'; }
+  11.67% { content: '53'; }
+  13.33% { content: '52'; }
+  15% { content: '51'; }
+  16.67% { content: '50'; }
+  18.33% { content: '49'; }
+  20% { content: '48'; }
+  21.67% { content: '47'; }
+  23.33% { content: '46'; }
+  25% { content: '45'; }
+  26.67% { content: '44'; }
+  28.33% { content: '43'; }
+  30% { content: '42'; }
+  31.67% { content: '41'; }
+  33.33% { content: '40'; }
+  35% { content: '39'; }
+  36.67% { content: '38'; }
+  38.33% { content: '37'; }
+  40% { content: '36'; }
+  41.67% { content: '35'; }
+  43.33% { content: '34'; }
+  45% { content: '33'; }
+  46.67% { content: '32'; }
+  48.33% { content: '31'; }
+  50% { content: '30'; }
+  51.67% { content: '29'; }
+  53.33% { content: '28'; }
+  55% { content: '27'; }
+  56.67% { content: '26'; }
+  58.33% { content: '25'; }
+  60% { content: '24'; }
+  61.67% { content: '23'; }
+  63.33% { content: '22'; }
+  65% { content: '21'; }
+  66.67% { content: '20'; }
+  68.33% { content: '19'; }
+  70% { content: '18'; }
+  71.67% { content: '17'; }
+  73.33% { content: '16'; }
+  75% { content: '15'; }
+  76.67% { content: '14'; }
+  78.33% { content: '13'; }
+  80% { content: '12'; }
+  81.67% { content: '11'; }
+  83.33% { content: '10'; }
+  85% { content: '9'; }
+  86.67% { content: '8'; }
+  88.33% { content: '7'; }
+  90% { content: '6'; }
+  91.67% { content: '5'; }
+  93.33% { content: '4'; }
+  95% { content: '3'; }
+  96.67% { content: '2'; }
+  98.33% { content: '1'; }
+  100% { content: '0'; }
+}
+
+.secondsLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 5px;
+  line-height: 18px;
+}
+
+/* Fun fact container - slides from bottom to top */
+/* .factContainer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 5px 20px;
+  transform: translateY(0px);
+}
+.factTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  animation: slideUpFade 0.8s cubic-bezier(0.4, 0, 0.2, 1) 5s forwards;
+}
+.factText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18px;
+  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: slideUpFade 0.8s cubic-bezier(0.4, 0, 0.2, 1) 7s forwards;
+} 
+@keyframes slideUpFade {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 360px) {
+  .factText {
+    font-size: 12px;
+  }
+} */
+ .factContainer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 5px 20px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+/* Visible state - animated from bottom to top */
+.factContainer.factVisible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* "Here is a fun fact:" title */
+.factTitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+
+/* Fun fact text content */
+.factText {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18px;
+  margin: 0;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+}
+@media (max-width: 360px) {
+  .factText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18px;
+  margin: 0;
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+}
+}
+.btnDiv{
+  width: 100%;
+  height: 50px;
+}
+.btn{
+  padding: 11px 37px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  background: #6039D2;
+}
+/* @media (max-width: 360px) {
+  .factText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18px;
+  margin: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+} */

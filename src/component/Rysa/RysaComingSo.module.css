@@ -1,0 +1,457 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #f197b6, #8563ec);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    padding: 0px 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  .navContainer {
+    position: sticky;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    /* justify-content: space-between;  */
+    /* align-items: center; */
+    /* padding: 0 2rem; */
+  }
+  
+  .navRight {
+    width: 100%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    justify-items: right;
+    /* gap: 2rem; */
+    padding-right: 20px;
+    /* background: #ef2222; */
+    /* background: #ed0d0d;  */
+  }
+  /* CSS */
+  .logoNav {
+    margin-left: 20px;
+    height: 50px;
+    width: 70px; /* Increase the width of the container */
+    /* background-color: red; */
+    display: flex; /* Aligns the image in the center */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoNav img {
+    width: 100%;  /* Image takes full width of the container */
+    height: 100%; /* Image scales to fit height */
+    object-fit: contain; /* Ensures the image fits while maintaining aspect ratio */
+  }
+  
+  
+  .navLinks {
+    display: flex;
+    gap: 0rem; 
+    margin-right: 1rem; 
+    /* margin-left: 50rem; */
+  }
+  
+  .navLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2.9rem;
+    color: black;
+    /* color: white; */
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+  }
+  
+  .navLink:hover {
+    background-color: #f0ecf4;
+    font-size: 1.1rem;
+    color: #260bf3;
+    border-radius: 1rem;
+    /* transform: scale(1.1); */
+  }
+  
+  /*  Login Button  */
+  .loginBtn {
+    padding: 0.6rem 1.3rem;
+    background-color: #5f57f6;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .loginBtn:hover {
+    background-color: #2511f8;
+    color: #d7bdf0;
+    font-size: 1rem;
+    /* border: 3px solid #ffffff; */
+    /* text-decoration: none; */
+  }
+  
+  .loginBtn:active {
+    background-color: #120999;
+    transform: scale(1.1);
+    border: 3px solid #f1c1f9;
+    /* text-decoration: none; */
+  }
+
+/* ---------Hero Section---------- */
+.heroSection {
+    padding: 5px 0;
+    /* min-height: 100px; */
+    /* min-height: calc(100vh - 80px); */
+    display: flex;
+    align-items: center;
+}
+
+.heroContainer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.heroContent {
+    /* padding-top: 3rem; */
+    flex: 1;
+    max-width: 600px;
+    opacity: 0.3;
+}
+
+.heroTitle {
+    font-size: 5rem;
+    font-weight: 750;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.0rem;
+}
+
+.heroSubtitle {
+    font-size: 1.30rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.applyBtn {
+    background: rgb(72, 126, 244);
+    backdrop-filter: blur(10px);
+    color: white;
+    /* border: 2px solid rgba(255, 255, 255, 0.3); */
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* cursor: pointer; */
+    /* transition: all 1.0s ease; */
+}
+
+.applyBtn:hover {
+    background: #0953f3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.comingDiv {
+     position: absolute;        /* Make it float over content */
+    top: 50%;                  /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Center it */
+    z-index: 999; 
+    text-align: center;
+    background: #5f57f6;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    width: auto;
+    /* margin-bottom: ; */
+}
+
+.h3comming {
+    font-size: 70px;
+    color: red
+}
+
+.heroImageContainer {
+    /* margin-bottom: -6px; */
+    flex: 0 0 400px;
+    height: 500px;
+    position: relative;
+    opacity: 0.3;
+    bottom: 0;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    /* width: 100px; Adjust as needed
+  height: auto; */
+}
+
+/* Hamburger Button - फक्त mobile view साठी */
+.hamburgerBtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: none;
+    /* default: hidden */
+}
+
+/* Humberger wrapper right ला */
+.navRightHumberger {
+    display: none;
+}
+
+/* Dropdown view for mobile nav */
+.humberView {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    /* nav खाली */
+    right: 1rem;
+    background-color: #676363;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(28, 28, 28, 0.3);
+    z-index: 999;
+}
+
+/* Individual nav links in hamburger dropdown */
+.navLinkHumberger {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+    font-size: 1rem;
+}
+
+.navLinkHumberger:last-child {
+    border-bottom: none;
+}
+
+.navLinkHumberger:hover {
+    background-color: #f7f0f0;
+    color: rgb(0, 0, 0);
+    border-radius: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .navRightHumberger {
+        display: block;
+        color: #000000;
+    }
+
+    .hamburgerBtn {
+        display: block;
+        color: #000000;
+    }
+
+    .loginBtn {
+        display: none;
+    }
+
+    .navContainer {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .navRight {
+        display: none;
+    }
+
+    .navRightHumberger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hamburgerBtn {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .loginBtn {
+        display: none;
+    }
+
+    .navContainer {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .humberView {
+        top: 60px;
+        right: 1rem;
+        width: 200px;
+        background-color: #444;
+    }
+
+    .navLinkHumberger {
+        padding: 0.7rem 1rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+
+    .heroImageContainer {
+        margin-bottom: -5px;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .heroImage {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .comingDiv{
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 2rem;
+        left: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .heroContainer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+
+    .heroImageContainer {
+        margin-bottom: -5px;
+        padding-bottom: 0px;
+        width: 100%;
+        height: auto;
+        /* position: static; */
+    }
+
+    .heroImage {
+        bottom: -200rem;
+        /* position: ; */
+        width: 100%;
+        height: auto;
+    }
+    .comingDiv{
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 2rem;
+        left: 8rem;
+    }
+}
+/* ===============
+   Footer Section 
+   ==============*/
+.footer {
+    position: relative;
+    background-color: #5f4dee;
+    color: white;
+    padding: 12px;
+    height: 160px;
+}
+.footerlogoAndText{
+
+}
+.footeraboutText {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.footeraboutText:hover {
+    color: #f0a500;
+}
+.footerTermText{
+font-size: 1rem;
+}
+.footerSpan1{
+  color:#f3b2f5;
+
+}
+.footerSpan{
+ color:#f3b2f5;
+}
+.footerSpan1:active{
+    color: #e373e7;
+}
+.footerSpan:active{
+    color: #e373e7;
+}

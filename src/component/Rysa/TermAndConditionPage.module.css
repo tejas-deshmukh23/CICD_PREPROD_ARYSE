@@ -1,0 +1,781 @@
+/* TermAndCondition.module.css */
+.container {
+  min-height: 100vh;
+  background-color: #f7f6fd;
+  margin: 0;
+  padding: 0;
+}
+.navdiv{
+  height: 80px;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+}
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  background-color: #fff;
+  margin: 20px 0px;
+  width: 90%;
+}
+
+/* Left logo container */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Right navigation links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* space between links */
+}
+
+/* Each text link */
+.navLinks div {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navLinks div:hover {
+  color: #5a3eff; /* purple hover color like the logo */
+}
+
+/* Log in button */
+.loginButton {
+  padding: 11px 37px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.loginButton:hover {
+  background: #6039D2;
+  color: #fff;
+  border-color: #6039D2;
+}
+/* humbeger css */
+.menuIcon {
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 720px;
+  background-color: #16161a;
+  color: white;
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+.show {
+  right: 0;
+}
+
+.closeIcon {
+  align-self: flex-end;
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuList li {
+  padding: 12px 0;
+  border-bottom: 1px solid #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menuList li:hover {
+  color: #a28cff;
+}
+
+.loginBtn {
+  width: 120px;
+  margin-top: 20px;
+  background-color: #6b46ff;
+  color: white;
+  padding: 10px 37px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.socialIcons {
+  margin-top: auto;
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.socialIcons svg:hover {
+  color: white;
+}
+/* ----------------------------- */
+/* 📱 MOBILE VIEW (max 768px) */
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+
+  .nav1 {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .navLinks {
+    display: none; 
+  }
+
+  .menuIcon {
+    display: block; 
+  }
+
+  .menuIcon svg {
+    color: #333;
+  }
+  .logo img {
+    width: 90px;
+    height: auto;
+  }
+  .sidebar {
+  height: 100%;
+}
+}
+
+/* ----------------------------- */
+/* 💻 DESKTOP VIEW (default) */
+/* ----------------------------- */
+@media screen and (min-width: 769px) {
+  .menuIcon {
+    display: none; /* hide hamburger in desktop */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .content {
+    padding: 25px;
+    margin: 20px 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .companyName {
+    font-size: 22px;
+  }
+
+  .main {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .companyName {
+    font-size: 20px;
+  }
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.content {
+  /* background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.companyName {
+  color: #6039D2;
+  font-size: 26px;
+}
+
+.policyContent {
+  text-align: left;
+}
+
+.sectionTitle {
+  color: #6039D2;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paragraph {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.link {
+  color: #6039D2;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.atag {
+  color: #6039D2;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.atag:focus {
+  color: #3f13c5;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* styles.module.css */
+
+/* Fixed ordered list styling */
+/* BULLETPROOF ORDERED LIST SOLUTION */
+.orderedList {
+  /* Reset everything first */
+  all: unset;
+
+  /* Force list behavior */
+  display: block !important;
+  list-style: none !important;
+  counter-reset: list-counter;
+
+  /* Spacing */
+  margin: 15px 0 !important;
+  padding: 0 !important;
+
+  /* Text styling */
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+.orderedList li {
+  /* Reset everything first */
+  all: unset;
+
+  /* Force list item behavior */
+  display: block !important;
+  counter-increment: list-counter;
+  position: relative;
+
+  /* Spacing */
+  margin: 0 0 0.5rem 0 !important;
+  padding: 0 0 0 30px !important;
+
+  /* Text styling */
+  color: #333;
+  line-height: 1.6;
+  font-size: 12px;
+  text-align: justify;
+}
+
+/* Create custom numbers */
+.orderedList li::before {
+  content: counter(list-counter) ". ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* font-weight: non; */
+  color: #333;
+  width: 25px;
+}
+
+.orderedList.numbered {
+  counter-reset: numbered-counter 0;
+}
+
+.orderedList.numbered li {
+  counter-increment: numbered-counter 1;
+}
+
+.orderedList.numbered li::before {
+  content: counter(numbered-counter, decimal) ". ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: #333 !important;
+  width: 30px;
+  z-index: 10;
+}
+
+/* Alternative approach - if counters still don't work */
+.orderedList.manualNumbers li:nth-child(1)::before {
+  content: "1. ";
+}
+
+.orderedList.manualNumbers li:nth-child(2)::before {
+  content: "2. ";
+}
+
+.orderedList.manualNumbers li:nth-child(3)::before {
+  content: "3. ";
+}
+
+.orderedList.manualNumbers li:nth-child(4)::before {
+  content: "4. ";
+}
+
+.orderedList.manualNumbers li:nth-child(5)::before {
+  content: "5. ";
+}
+
+.orderedList.manualNumbers li:nth-child(6)::before {
+  content: "6. ";
+}
+
+.orderedList.manualNumbers li:nth-child(7)::before {
+  content: "7. ";
+}
+
+.orderedList.manualNumbers li:nth-child(8)::before {
+  content: "8. ";
+}
+
+.orderedList.manualNumbers li:nth-child(9)::before {
+  content: "9. ";
+}
+
+.orderedList.manualNumbers li:nth-child(10)::before {
+  content: "10. ";
+}
+
+/* UNORDERED LIST - Keep your existing code */
+.listDisc1 {
+  all: unset;
+  display: block !important;
+  margin: 15px 0 !important;
+  padding: 0 !important;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.listDisc1 li {
+  all: unset;
+  display: block !important;
+  position: relative;
+  margin: 0 0 0.5rem 0 !important;
+  padding: 0 0 0 25px !important;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.listDisc1 li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+/* For upper-alpha lists (A, B, C...) */
+.orderedList.upperAlpha {
+  counter-reset: alpha-counter;
+}
+
+.orderedList.upperAlpha li {
+  counter-increment: alpha-counter;
+}
+
+.orderedList.upperAlpha li::before {
+  content: counter(alpha-counter, upper-alpha) ". ";
+}
+
+/* BULLETPROOF UNORDERED LIST SOLUTION */
+.listDisc1 {
+  /* Reset everything first */
+  all: unset;
+
+  /* Force list behavior */
+  display: block !important;
+
+  /* Spacing */
+  margin: 15px 0 !important;
+  padding: 0 !important;
+
+  /* Text styling */
+  color: #333;
+  line-height: 1.6;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.listDisc1 li {
+  /* Reset everything first */
+  all: unset;
+
+  /* Force list item behavior */
+  display: block !important;
+  position: relative;
+
+  /* Spacing */
+  margin: 0 0 0.5rem 0 !important;
+  padding: 0 0 0 25px !important;
+
+  /* Text styling */
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Create custom bullets */
+.listDisc1 li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* font-weight: bold; */
+  color: #333;
+  font-size: 16px;
+}
+
+.spans {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navigation {
+    gap: 20px;
+  }
+
+  .content {
+    padding: 25px;
+    margin: 20px 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .companyName {
+    font-size: 22px;
+  }
+
+  .main {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .companyName {
+    font-size: 20px;
+  }
+}
+
+/* Footer.module.css */
+/* footer */
+.footer {
+  background-color: #121212;
+  color: #d3d3d3;
+  padding: 60px 80px;
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  min-width: 300px;
+  font-size: 0.9rem;
+  color: #f1f0f0;
+}
+.footerParent{
+  width: 100%;
+  min-width: 300px;
+}
+.fistFooterSection{
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: row;
+  color: #7C7C7C;
+}
+/* .footerLoge{
+    height: 60px;
+    width: 180px;
+    color: transparent;
+} */
+.firstChild{
+  /* flex: 1; */
+  flex: 0 0 25%;   
+ max-width: 100%;
+ /* max-width: auto; */
+ min-width: 250px;
+ padding: 0px 0px 0px 20px;
+}
+.infoAndIcon{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.iconSapan{
+  margin-top: -60px;
+}
+.contactLink{
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.fistFooterSection2{
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: row;
+  margin: 30px 0;
+}
+.firstChild2{
+  /* flex: 1; */
+  flex: 0 0 25%;   
+ max-width: 100%;
+ /* max-width: auto; */
+ min-width: 250px;
+ padding: 0px 20px;
+}
+.infoAndIcon2{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 5px;
+  /* padding-left: 250px; */
+  font-size: 17px;
+  color: #000;
+}
+.socialIconBack{
+  background-color: #7C7C7C;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.socialIconF{
+  margin: 8px 0 0  5px;
+}
+.iconF{
+  font-size: 24px;
+}
+.lastChild{
+  align-items: baseline;
+  text-align: center;
+  border-top: 1px solid #7C7C7C;
+  padding: 10px 0px 0px 0px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #7C7C7C;
+}
+/* ========================= */
+/* 📱 Responsive (Mobile View) */
+/* ========================= */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .fistFooterSection {
+    margin-top: 30px;
+     display: flex;
+  flex-wrap: wrap;  
+  }
+
+  .firstChild {
+     flex: 0 0 50%;  
+    /* min-width: 100%; */
+    margin-bottom: 25px;
+  }
+  .fistFooterSection2 {
+     display: grid;
+     margin-top: -20px;
+  /* flex-wrap: wrap;   */
+  }
+
+  .firstChild2 {
+     flex: 0 0 50%;  
+  }
+  .infoAndIcon2 {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 15px;
+  }
+ .fistFooterSection {
+    display: flex;
+  flex-wrap: wrap;   
+  width: 100%;
+  padding-top: 60px;
+  }
+  .firstChild {
+    flex: 0 0 50%;  
+    margin-bottom: 20px;
+    /* flex: 0 0 50%; */
+    /* width: 100px; */
+    flex: 1;
+    flex: 0 0 50%;   
+    min-width: 0;    
+    box-sizing: border-box;
+    padding: 0px 0px;
+  }
+  .firstChild2{
+  flex: 0 0 25%;   
+ max-width: 100%;
+ min-width: 250px;
+ padding: 0px 0px;
+}
+  .footerIconAysefin{
+    width: 100px;
+    height: 50px;
+  }
+  .infoAndIcon{
+    justify-content: center;
+    align-items: center;
+  }
+  .infoAndIcon span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -2%;
+  }
+  .infoAndIcon2 {
+    font-size: 0.1rem;
+  }
+.socialIconBack{
+  background-color: #7C7C7C;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+.socialIconF{
+  margin: 6px 0 0  4px;
+}
+.iconSapan1{
+  margin-top: -20px;
+}
+.iconSapan2{
+  margin-top: -20px;
+}
+.iconSapan{
+  margin-top: -110px;
+}
+
+.iconF{
+  font-size: 20px;
+}
+  .socialIconF {
+    font-size: 16px;
+  }
+  .contactLink{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  .lastChild{
+  align-items: baseline;
+  text-align: center;
+  border-top: 1px solid #7C7C7C;
+  padding: 10px 0px 0px 0px;
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #7C7C7C;
+}
+}

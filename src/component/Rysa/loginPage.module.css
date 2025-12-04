@@ -1,0 +1,202 @@
+/* loginPage.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+}
+
+.card {
+  width: 432px;
+  height: 100vh;
+  border-radius: 12px;
+  background: #F7F6FD;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  /* padding-bottom: 2rem; */
+}
+
+.topSection {
+  position: relative;
+  height: 130px;
+  background: #F7F6FD;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.topLeft {
+  float: right;
+  /* position: absolute; */
+  width: 70%;
+  height: 150px;
+  background: linear-gradient( #f9eefa 100%, #d7cdf5 100%);
+  /* background: #9e89b4; */
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.user1 {
+  position: absolute;
+  bottom: -15px;
+  left: 130px;
+  /* background: #d3f1ff; */
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.user2 {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  /* background: #d3f1ff; */
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.profileImage {
+  border-radius: 10%;
+}
+
+.formWrapper {
+  padding: 1.5rem;
+  padding-top: 2rem;
+  position: relative;
+  z-index: 3;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.subheading {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+.input {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #f1efef;
+  /* border-bottom: 2px solid #ccc; */
+  font-size: 14px;
+  color: #000;
+  outline: none;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.input:hover,
+.input:focus {
+  /* border-color: #b09af9;
+  border-radius: 8px;
+  padding: 10px 8px;
+  background-color: white;
+  box-shadow: rgb(0, 0, 10); */
+  border-radius: 10px;
+  border-color: #7b5dff;
+  box-shadow: 2px 2px 2px 2px #7b5dff33;
+}
+/* .input {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  padding: -30px 8px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.input:hover,
+.input:focus {
+  
+  border-radius: 8px;
+  padding: 10px 8px;
+  background-color: #f9f5ff;
+} */
+
+.otpButton {
+  width: 60%;
+  background-color: #6039D2;
+  color: white;
+  padding-left: 30px;
+  padding: 12px 12px 12px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  margin-left: 60px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.otpButton:hover {
+  /* background-color: #4c31b8; */
+  opacity: 0.9;
+}
+
+.resendText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.timer {
+  color: green;
+  font-weight: bold;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: #000;
+}
+
+.link {
+  color: #6233ff;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.bottomShape {
+
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 150px;
+  background: linear-gradient(#ede0f9 50%);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

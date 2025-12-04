@@ -1,0 +1,295 @@
+
+/* ======================================================== */
+.container {
+    background-color: #f7f6fd;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(45deg, #6039D2, #D6C8FF);
+
+    /* border: 1px solid red; */
+    /* padding: 0 10px; */
+    /* display: grid; */
+}
+.mainHeaderPart {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    margin: 0 0 30px 0;
+    
+}
+.topchildren {
+    width: 100%;
+    height: auto;
+    height: 90px;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    /* background-color: #6039D2; */
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 100%;
+    /* height: 150px; */
+    margin: 25px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+
+.logo2 {
+    width: auto;
+    height: auto;
+    /* border-radius: 326.24px; */
+    /* border-radius: 50%; */
+
+}
+.card {
+  width: 100%;
+  max-width: 432px;
+  background: linear-gradient(to bottom, #FFFFFF, #D6C8FF);
+  padding: 10px 20px 46px 20px;
+  /* border-bottom-left-radius: 24px; */
+  /* border-bottom-right-radius: 24px; */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin-top: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #111;
+  z-index: 3;
+  /* margin-bottom: 25px; */
+}
+
+.btnContainer {
+  width: 100%;
+  margin-top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;   
+}
+
+.nextbtn {
+
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: #6039d2;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 11px 37px;
+
+
+}
+/* ===================================================== */
+/* ——— टॉप ग्रॅडियंट हेडर ——— */
+.header {
+  width: 100%;
+  max-width: 432px;
+  /* height: 200px; */
+  padding: 0px 0 0 4px;
+  color: #ffffff;
+  font-weight: 600;
+  /* background: linear-gradient(to right, #f3b2f5 50%, #a78afa); */
+  background: #6039d2;
+  font-size: 17px;
+  z-index: 1;
+   margin-top: -20px;
+  margin-bottom: -10px; 
+  /* border-top-left-radius: 16px; */
+  /* border-top-right-radius: 16px; */
+}
+.headerLogo {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50%; */
+    border-radius: 10px 10px 0px 0px;
+    /* padding-bottom: 12px; */
+    height: 30%;
+    padding-top: 1.5rem;
+    padding-bottom: 30px;
+    
+ }
+
+ /* .header2 {
+  margin-top: -20px;
+  margin-bottom: 0px; 
+  background-color: red;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+} */
+/* ——— कार्ड ——— */
+/* .card {
+  width: 100%;
+  max-width: 432px;
+  background: #F7F6FD;
+  padding: 30px 20px 46px 20px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin-top: -15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #111;
+  z-index: 3;
+  margin-bottom: 25px;
+} */
+
+/* सेक्शन शीर्षक */
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 22px 0 12px 0;
+}
+
+/* रकमेच्या रोws */
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 6px;
+}
+
+.row span:first-child {
+  max-width: 65%;
+  word-break: break-word;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+
+.row span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* नेट डिस्बर्सड हायलाइट */
+.netLabel {
+  font-weight: 600;
+}
+
+.netValue {
+  font-weight: 700;
+}
+
+.valueAm {
+  color: #111;
+  font-weight: bold;
+}
+
+/* हलका डिव्हायडर */
+.divider {
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin: 16px 0;
+}
+
+/* ——— GRO फील्ड्स ——— */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.field label {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: #000000;
+}
+.field :last-child{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.readonlyInput {
+  background: #edecec;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222;
+  pointer-events: none;
+}
+.LogoPart-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ .header-box {
+  margin-top: -20px;
+  margin-bottom: -13px; 
+  height: 100%;
+}
+
+
+/* 
+.nextbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nextbtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -7px;
+    right: -20px;
+    transition: 0.5s;
+    font-size: 24px;
+}
+
+.nextbtn:hover span {
+    padding-right: 25px;
+}
+
+.nextbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+} */
+
+/* .nextbtn:active {
+    width: 100%;
+    height: 62px;
+    background-color: #6039d2;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #6039d2;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.35);
+
+} */
+

@@ -1,0 +1,204 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e478f0, #9e8bf6);
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  width: 432px;
+  margin: 0 auto;
+  padding: 20px;
+  /* border-radius: 12px; */
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.ref {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Professional Success/Failed Checkmark Styles */
+.professional-checkmark-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Updated styling from KFS Completed page */
+.status-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.status-completed {
+  background: linear-gradient(45deg, #10B981, #059669);
+  color: white;
+  animation: completedPulse 2s ease-in-out infinite;
+}
+
+.status-failed {
+  background: linear-gradient(45deg, #EF4444, #DC2626);
+  color: white;
+  animation: failedPulse 2s ease-in-out infinite;
+}
+
+@keyframes completedPulse {
+  0%, 100% { 
+    transform: scale(1); 
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); 
+  }
+  50% { 
+    transform: scale(1.05); 
+    box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); 
+  }
+}
+
+@keyframes failedPulse {
+  0%, 100% { 
+    transform: scale(1); 
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); 
+  }
+  50% { 
+    transform: scale(1.05); 
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); 
+  }
+}
+
+/* Keep original styles for backward compatibility */
+.success-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0 4px 20px rgba(16, 185, 129, 0.25),
+    0 2px 8px rgba(16, 185, 129, 0.15);
+  animation: professionalBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  transform: scale(0);
+  z-index: 2;
+}
+
+.checkmark-professional {
+  width: 24px;
+  height: 40px;
+  border: solid #ffffff;
+  border-width: 0 3.5px 3.5px 0;
+  transform: rotate(45deg);
+  animation: professionalDraw 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.success-ripple {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #10b981;
+  border-radius: 50%;
+  animation: professionalRipple 1.5s ease-out 0.8s forwards;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Professional Keyframe Animations */
+@keyframes professionalBounce {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes professionalDraw {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 12px;
+    height: 0;
+    opacity: 0.7;
+  }
+  100% {
+    width: 24px;
+    height: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes professionalRipple {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .professional-checkmark-container {
+    width: 90px;
+    height: 90px;
+  }
+    
+  .status-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+    
+  .success-circle {
+    width: 70px;
+    height: 70px;
+  }
+    
+  .checkmark-professional {
+    width: 20px;
+    height: 35px;
+    border-width: 0 3px 3px 0;
+  }
+    
+  .success-ripple {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,0 +1,110 @@
+/* SelfieVerifying.css */
+.verification-container {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verification-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-wrapper {
+  margin-bottom: 2rem;
+}
+
+.logo-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.verification-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.verification-message {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: #333;
+}
+
+.dots {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  animation: blink 1.5s infinite;
+}
+
+.illustration-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.verification-illustration {
+  object-fit: contain;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1024px) {
+  .verification-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .verification-text {
+    margin: 3rem 0;
+  }
+
+  .illustration-wrapper {
+    max-width: 800px;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .verification-content {
+    padding: 2rem;
+  }
+
+  .illustration-wrapper {
+    max-width: 600px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  .verification-content {
+    padding: 1rem;
+  }
+
+  .verification-text {
+    margin: 1.5rem 0;
+  }
+
+  .illustration-wrapper {
+    max-width: 400px;
+  }
+
+  .verification-illustration {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+}

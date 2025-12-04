@@ -1,0 +1,2227 @@
+/* nav.module.css */
+.topMostDiv {
+  overflow: hidden;
+  scrollbar-width: none;
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+
+}
+
+/* Alternative: Hide scrollbar but keep scrolling functionality */
+.topMostDiv-scrollable {
+  overflow: auto;
+  /* Allow scrolling */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.topMostDiv-scrollable::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+/* If you want to hide both horizontal and vertical scrollbars separately */
+.topMostDiv-custom {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  overflow-y: auto;
+  /* Show vertical scrolling but hide scrollbar */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.topMostDiv-custom::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----------nav section------------ */
+.container {
+  width: 100%;
+  /* min-height: auto; */
+  background: linear-gradient(to right, #f197b6, #8563ec);
+  /* background: linear-gradient(135deg, #eb48fa 0%, #421af2 100%); */
+}
+
+/* Navigation Styles */
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0;
+}
+.navbar {
+  background-color: #ffffff;
+  backdrop-filter: blur(10px);
+  padding: 0px 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navContainer {
+  position: sticky;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 4px 0 0 0;
+  /* padding-bottom: 4px; */
+  display: flex;
+  /* justify-content: space-between;  */
+  /* align-items: center; */
+  /* padding: 0 2rem; */
+}
+
+.navRight {
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  justify-items: right;
+  /* gap: 2rem; */
+  padding-right: 20px;
+  /* background: #ef2222; */
+  /* background: #ed0d0d;  */
+}
+
+/* CSS */
+.logoNav {
+  margin-left: 20px;
+  height: 50px;
+  width: 70px;
+  /* Increase the width of the container */
+  /* background-color: red; */
+  display: flex;
+  /* Aligns the image in the center */
+  justify-content: center;
+  align-items: center;
+}
+
+.logoNav img {
+  width: 100%;
+  /* Image takes full width of the container */
+  height: 100%;
+  /* Image scales to fit height */
+  object-fit: contain;
+  /* Ensures the image fits while maintaining aspect ratio */
+}
+
+
+.navLinks {
+  display: flex;
+  gap: 0rem;
+  margin-right: 1rem;
+  /* margin-left: 50rem; */
+}
+
+.navLink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2.9rem;
+  color: black;
+  /* color: white; */
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 0.5rem;
+}
+
+.navLink:hover {
+  background-color: #f0ecf4;
+  font-size: 1.1rem;
+  color: #260bf3;
+  border-radius: 1rem;
+  /* transform: scale(1.1); */
+}
+
+/*  Login Button  */
+.loginBtn {
+  padding: 0.6rem 1.3rem;
+  background-color: #5f57f6;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  background-color: #2511f8;
+  color: #d7bdf0;
+  font-size: 1rem;
+  /* border: 3px solid #ffffff; */
+  /* text-decoration: none; */
+}
+
+.loginBtn:active {
+  background-color: #120999;
+  transform: scale(1.1);
+  border: 3px solid #f1c1f9;
+  /* text-decoration: none; */
+}
+
+/* ---------Hero Section---------- */
+.heroSection {
+  padding: 5px 0;
+  /* min-height: 100px; */
+  /* min-height: calc(100vh - 80px); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroContainer {
+  width: 100%;
+  max-width: auto;
+  /* margin: 0 auto; */
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.heroContent {
+  /* padding-top: 3rem; */
+  flex: 1;
+  max-width: 800px;
+}
+
+.heroTitle {
+  font-size: 5.6rem;
+  font-weight: 750;
+  color: white;
+  line-height: 1.1;
+  margin-bottom: 1.0rem;
+}
+
+.heroSubtitle {
+  font-size: 1.0rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.subtitleChecks{
+   display: flex;
+  align-items: center; 
+  gap: 8px; 
+  margin-bottom: 0.5rem;
+  /* color: red; */
+}
+
+.applyBtn {
+  background: #6039d2;
+  backdrop-filter: blur(10px);
+  color: white;
+  /* border: 2px solid rgba(255, 255, 255, 0.3); */
+  padding: 1rem 1rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 60px;
+  width: 150px;
+  /* cursor: pointer; */
+  /* transition: all 1.0s ease; */
+}
+
+.applyBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.applyBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -7px;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 24px;
+}
+
+.applyBtn:hover span {
+  padding-right: 25px;
+}
+
+.applyBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.applyBtn:active {
+  height: 62px;
+  background-color: #6039d2;
+  color: white;
+  /* font-size: 18px; */
+  font-weight: 600;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #6039d2;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.35);
+
+}
+
+.heroImageContainer {
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  flex: 0 0 400px;
+  height: 500px;
+  position: relative;
+
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* right: 0; */
+  bottom: -12px;
+  /* left: 95px; */
+  /* width: 100px; Adjust as needed
+  height: auto; */
+}
+
+/* --------------------Features Section-------------------- */
+.featuresSection {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3rem 0 0 0;
+  margin-top: 0rem;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* card feature section */
+.loanFeaturesSection {
+  display: flex;
+  height: 20rem;
+  width: 100%;
+  color: white;
+  text-align: center;
+  flex-wrap: nowrap;
+  /* Changed from wrap to nowrap */
+  overflow: hidden;
+  margin: 0;
+  /* Remove any default margins */
+  padding: 0;
+  /* Remove any default padding */
+}
+
+/* Feature Box - Main container */
+.featureBox {
+  flex: 1;
+  /* Equal width distribution */
+  min-width: 0;
+  /* Allow shrinking */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  position: relative;
+  margin: 0;
+  /* Remove margins */
+  padding: 0;
+  /* Remove padding from main container */
+}
+
+.featureBox:hover {
+  transform: scale(1.05);
+  /* Reduced scale to prevent overflow */
+}
+
+/* Feature Box Content Areas */
+.featureBox1,
+.featureBox2,
+.featureBox3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: calc(20rem - 35px);
+  /* Subtract empty child height */
+  position: relative;
+  margin: 0;
+}
+
+.featureBox1 {
+  background: linear-gradient(to bottom, #8961f7, #3814b0);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featureBox2 {
+  background: linear-gradient(to top, #8d61f4, #7d7deb);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featureBox3 {
+  background: linear-gradient(to bottom, #8961f7, #3814b0);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty children - Top strips */
+.emptychild1,
+.emptychild2,
+.emptychild3 {
+  height: 35px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.emptychild1 {
+  background: #6a51f7;
+}
+
+.emptychild2 {
+  background: #8d60f7;
+}
+
+.emptychild3 {
+  background: #6a51f7;
+}
+
+.icon {
+  font-size: 3.0rem;
+  margin-bottom: 1rem;
+}
+
+.featureBox h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featureBox p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Hamburger Button - फक्त mobile view साठी */
+.hamburgerBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: none;
+  /* default: hidden */
+}
+
+/* Humberger wrapper right ला */
+.navRightHumberger {
+  display: none;
+}
+
+/* Dropdown view for mobile nav */
+.humberView {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  /* nav खाली */
+  right: 1rem;
+  background-color: #676363;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(28, 28, 28, 0.3);
+  z-index: 999;
+}
+
+/* Individual nav links in hamburger dropdown */
+.navLinkHumberger {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+  font-size: 1rem;
+}
+
+.navLinkHumberger:last-child {
+  border-bottom: none;
+}
+
+.navLinkHumberger:hover {
+  background-color: #f7f0f0;
+  color: rgb(0, 0, 0);
+  border-radius: 0.3rem;
+}
+
+/* @media (max-width: 768px) {
+  .logoNav {
+    margin-left: 0px;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    backdrop-filter: blur(10px);
+    padding: 0px 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  .navContainer {
+    position: sticky;
+    width: 100%;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navRight {
+    display: none;
+  }
+
+  .navRightHumberger {
+    display: block;
+    color: #000000;
+  }
+
+  .hamburgerBtn {
+    display: block;
+    color: #000000;
+  }
+
+  .loginBtn {
+    display: none;
+  }
+} */
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 5rem;
+  }
+
+  .heroImageContainer {
+    flex: 0 0 350px;
+    height: 450px;
+    bottom: 0;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -65px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media(max-width: 1087px) {
+  .heroContainer {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 5rem;
+  }
+
+  .heroImageContainer {
+    flex: 0 0 350px;
+    height: 450px;
+    bottom: 0;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -65px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1113px) {
+  .heroContainer {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 5rem;
+  }
+
+  .heroImageContainer {
+    flex: 0 0 350px;
+    height: 450px;
+    bottom: 0;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -65px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 771px) {
+  .heroContainer {
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 5rem;
+  }
+
+  .heroImageContainer {
+    flex: 0 0 350px;
+    height: 450px;
+    /* bottom: -20px; */
+  }
+
+  .heroImage {
+    position: relative;
+    /* bottom: -20px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Medium Tablets */
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .heroContent {
+    max-width: 100%;
+  }
+
+  .heroTitle {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .applyBtn {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .heroImageContainer {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    position: static;
+    margin: 0 auto;
+    bottom: 0;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -65px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 1rem 0;
+  }
+
+  .heroContainer {
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .applyBtn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 1.9rem;
+  }
+
+  .heroImageContainer {
+    max-width: 300px;
+    height: 250px;
+    bottom: 0;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -40px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.9rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .applyBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .heroImageContainer {
+    max-width: 450px;
+    height: 400px;
+  }
+
+  .heroImage {
+    position: relative;
+    bottom: -40px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ========== FEATURE SECTION RESPONSIVE ========== */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+  .loanFeaturesSection {
+    padding: 0 1rem;
+  }
+
+  .featureBox h3 {
+    font-size: 1.4rem;
+  }
+
+  .featureBox p {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium Tablets */
+@media (max-width: 768px) {
+  .loanFeaturesSection {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .featureBox {
+    width: 100%;
+    margin-bottom: 1rem;
+    max-width: none;
+  }
+
+  .featureBox1,
+  .featureBox2,
+  .featureBox3 {
+    height: auto;
+    min-height: 200px;
+    padding: 1.5rem;
+  }
+
+  .featureBox h3 {
+    font-size: 1.3rem;
+  }
+
+  .featureBox p {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .loanFeaturesSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .featureBox {
+    margin-bottom: 0.5rem;
+  }
+
+  .featureBox1,
+  .featureBox2,
+  .featureBox3 {
+    padding: 1rem;
+    min-height: 180px;
+  }
+
+  .featureBox h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .featureBox p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .emptychild1,
+  .emptychild2,
+  .emptychild3 {
+    height: 25px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+
+  .featureBox1,
+  .featureBox2,
+  .featureBox3 {
+    padding: 0.8rem;
+    min-height: 160px;
+  }
+
+  .featureBox h3 {
+    font-size: 1rem;
+  }
+
+  .featureBox p {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+}
+
+/* -----------------------middle page css ------------------------*/
+/* CSS for full-page scroll */
+.mainDiv {
+  display: block;
+  height: auto;
+  overflow: visible;
+  /* scroll block */
+  width: 100%;
+}
+
+.stickyContainer {
+  position: static;
+  top: auto;
+  height: auto;
+  width: 100%;
+  overflow: visible;
+  background: #f7f6fd;
+  padding: 20px 0;
+  /* margin: -20px 0; */
+}
+
+.Card {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* .Card.show {
+  display: block;
+} */
+
+/* Common styles for all parts */
+.firstPart,
+.thirdPart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 20px 0;
+  position: relative;
+  /* Parent container needs relative positioning for absolute children */
+  padding-top: 3rem;
+  margin-right: 2px;
+}
+
+.secondPart,
+.fourthPart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 20px 0;
+  position: relative;
+  /* Parent container needs relative positioning for absolute children */
+  padding-top: 3rem;
+  margin-left: 2px;
+}
+
+.circle {
+  width: 300px;
+  /* सर्कलचा आकार */
+  height: 300px;
+  /* सर्कलचा उंची */
+  border-radius: 50%;
+  /* सर्कल बनवण्यासाठी */
+  background-color: rgb(235, 204, 209);
+  /* सर्कलला रंग देणे */
+  position: absolute;
+  /* सर्कलला ओळखण्यासाठी 'absolute' पोजिशन */
+  top: 50%;
+  /* सर्कलला पॅरेन्ट डिवच्या मध्यभागी ठेवा */
+  left: -30px;
+  /* टेक्स्ट बॉक्सच्या डाव्या बाजूस सर्कल ठेवा */
+  z-index: 3;
+  /* सर्कल टेक्स्ट बॉक्सच्या वर असावा, त्यामुळे जास्त 'z-index' */
+  opacity: 0.8;
+}
+
+/* ==========================
+  FIRST PART STYLES
+  ========================== */
+.firstPart {
+  /* padding-left: 14rem; */
+  right: 0;
+  padding-bottom: 3rem;
+  flex-direction: row;
+  /* Change this from 'row-reverse' to 'row' to show text box before image */
+  position: none;
+  /* Make sure the parent container is relative for absolute children */
+}
+
+.firstPart .circle {
+  background-color: #c7bff4;
+  top: 45px;
+  /* Circle will appear above the text box */
+  left: 140px;
+  /* Circle will be on the left side of the text box */
+  width: 200px;
+  /* Smaller circle size */
+  height: 200px;
+  /* Same size for height */
+  opacity: 0.5;
+}
+
+.firstPart .textBox:hover~.circle {
+  transform: scale(0.6);
+  /* Reduce the circle size by 40% */
+}
+
+.firstPart .textBox {
+  background-color: #eddaf8;
+  width: 600px;
+  /* Adjust the text box width */
+  height: 300px;
+  /* Adjust the text box height */
+  margin-left: 10px;
+  position: relative;
+  z-index: 2;
+  padding-top: 7rem;
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  /* डाव्या वरच्या काठाला 5px गोलाकार */
+  border-bottom-left-radius: 10px;
+  border-left: 5px solid transparent;
+  /* Initially transparent border */
+  border-right: 5px solid transparent;
+  /* Initially transparent border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+.firstPart .textBox .htag {
+  padding-top: 3rem;
+  color: #000000;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.firstPart .textBox .ptag {
+  color: #6B7280;
+  font-size: 1.1rem;
+  /* fixed spacing */
+}
+
+.firstPart .imageContainer {
+  width: 400px;
+  /* Image width */
+  height: 500px;
+  /* Image height */
+  position: relative;
+  margin-right: 0;
+  /* Remove margin to ensure image touches the right side */
+  z-index: 3;
+}
+
+.firstPart .imageContainer img {
+  width: 100%;
+  /* इमेज पूर्ण कंटेनरमध्ये फैलावलेली */
+  height: 100%;
+  /* इमेज पूर्ण कंटेनरमध्ये फैलावलेली */
+  object-fit: cover;
+  /* इमेज योग्य प्रकारे फिट होईल */
+  border-top-left-radius: 60px;
+  /* गोलाकार कोपरे */
+  border-top-right-radius: 60px;
+  /* गोलाकार कोपरे */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+  /* होव्ह इफेक्टसाठी ट्रांझिशन */
+}
+
+/* ==========================
+  SECOND PART STYLES
+  ========================== */
+
+/* Second Part: Image → Text Box → Circle Line (Image on the left) */
+.secondPart {
+  /* margin-left: 1rem; */
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  flex-direction: row;
+  /* Image on the left */
+}
+
+.secondPart .imageContainer {
+  width: 400px;
+  height: 500px;
+  z-index: 3;
+}
+
+.secondPart .textBox {
+  background-color: #ccc6ec;
+  width: 600px;
+  /* Adjust the text box width */
+  height: 300px;
+  /* Adjust the text box height */
+  /* margin-left: 10px; */
+  padding-top: 2rem;
+  padding-left: 4rem;
+  position: relative;
+  z-index: 1;
+  border-top-right-radius: 10px;
+  /* डाव्या वरच्या काठाला 5px गोलाकार */
+  border-bottom-right-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+/* ==========================
+  Pseudo Elements for Pink Lines on Hover
+  ========================== */
+.secondPart .textBox .htag {
+  padding-top: 1rem;
+  color: #000000;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.secondPart .textBox .ptag {
+  color: #6B7280;
+  font-size: 1.1rem;
+  /* fixed spacing */
+}
+
+.secondPart .circleLine {
+  /* width: 40px;
+  height: 40px; */
+  border-radius: 50%;
+  background-color: #edd7f9;
+  /* Light pink circle */
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  /* Circle will appear above the text box */
+  left: 59rem;
+  width: 100px;
+  /* Smaller circle size */
+  height: 100px;
+  /* Same size for height */
+}
+
+.secondPart .imageContainer img {
+  object-fit: cover;
+  width: 100%;
+  /* Ensures the image takes full container size */
+  height: 100%;
+  /* Ensures the image takes full container size */
+  border-top-left-radius: 60px;
+  /* डाव्या वरच्या काठाला 5px गोलाकार */
+  border-top-right-radius: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+
+/* ==========================
+  THIRD PART STYLES
+  ========================== */
+
+/* Third Part: Circle → Text Box → Image (Image on the right) */
+.thirdPart {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-left: 14rem;
+  flex-direction: row;
+  /* Change this from 'row-reverse' to 'row' to show text box before image */
+}
+
+.thirdPart .circle {
+  background-color: #ccc6ec;
+  top: 40px;
+  /* Circle will appear above the text box */
+  left: 12rem;
+  /* Circle will be on the left side of the text box */
+  width: 100px;
+  /* Smaller circle size */
+  height: 100px;
+  /* Same size for height */
+}
+
+.thirdPart .textBox {
+  background: linear-gradient(#f1d9f8);
+  margin-top: 20px;
+  width: 600px;
+  /* Adjust the text box width */
+  height: 300px;
+  /* Adjust the text box height */
+  margin-left: 10px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 10px;
+  /* डाव्या वरच्या काठाला 5px गोलाकार */
+  border-bottom-left-radius: 10px;
+}
+
+/* ==========================
+  Pseudo Elements for Pink Lines on Hover
+  ========================== */
+.thirdPart .textBox .htag {
+  padding-top: 3rem;
+  color: #000000;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.thirdPart .textBox .ptag {
+  color: #6B7280;
+  font-size: 1.1rem;
+  /* fixed spacing */
+}
+
+.thirdPart .imageContainer {
+  width: 400px;
+  /* Image width */
+  height: 500px;
+  /* Image height */
+  position: relative;
+  z-index: 3;
+  margin-right: 0;
+  /* Remove margin to ensure image touches the right side */
+}
+
+.thirdPart .imageContainer img {
+  object-fit: cover;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  width: 100%;
+  /* Ensures the image takes full container size */
+  height: 100%;
+  /* Ensures the image takes full container size */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+/* ==========================
+  FOURTH PART STYLES
+  ========================== */
+
+/* Fourth Part: Image → Text Box → Circle Line (Image on the left) */
+.fourthPart {
+  flex-direction: row;
+  /* Image on the left */
+}
+
+.fourthPart .imageContainer {
+  width: 400px;
+  /* Image width */
+  height: 500px;
+  /* Image height */
+  z-index: 3;
+}
+
+.fourthPart .textBox {
+  background-color: #d9c9f7;
+  width: 600px;
+  /* Adjust the text box width */
+  height: 300px;
+  /* Adjust the text box height */
+  padding-top: 3rem;
+  padding-left: 4rem;
+  position: relative;
+  z-index: 2;
+  border-top-right-radius: 10px;
+  /* डाव्या वरच्या काठाला गोलाकार */
+  border-bottom-right-radius: 10px;
+  transition: all 0.3s ease;
+  /* Transition for smooth hover effect */
+}
+
+
+/* ==========================
+  Pseudo Elements for Pink Lines on Hover
+  ========================== */
+
+.fourthPart .textBox .htag {
+  color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fourthPart .textBox .ptag {
+  color: #6B7280;
+  font-size: 1.1rem;
+  /* fixed spacing */
+}
+
+.fourthPart .circleLine {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f1d9f8;
+  /* Light pink circle */
+  position: absolute;
+  z-index: 3;
+  top: 40px;
+  /* Circle will appear above the text box */
+  left: 56rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  /* Transition for smooth effect */
+}
+
+.fourthPart .imageContainer img {
+  object-fit: cover;
+  width: 100%;
+  /* Ensures the image takes full container size */
+  height: 100%;
+  /* Ensures the image takes full container size */
+  border-top-left-radius: 60px;
+  /* डाव्या वरच्या काठाला 5px गोलाकार */
+  border-top-right-radius: 60px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+}
+
+/* ==========================
+  MOBILE RESPONSIVE STYLES
+  ========================== */
+
+/* General Settings for Small Screens */
+@media screen and (max-width: 768px) {
+
+  /* Main Container */
+  .mainDiv {
+    flex-direction: column;
+    /* Stack elements vertically */
+    height: auto;
+    /* Allow height to adjust according to content */
+    overflow: visible;
+    /* Allow scrolling */
+  }
+
+  /* Sticky Container */
+  .stickyContainer {
+    position: relative;
+    /* Make sticky container non-sticky on small screens */
+    height: auto;
+    margin: -20px 0;
+  }
+
+  /* Card Styles */
+  .Card {
+    width: 100%;
+    height: auto;
+    /* Adjust the height based on content */
+    padding: 10px;
+  }
+
+  /* First Part */
+  .firstPart {
+    padding-left: 1rem;
+    /* Adjust padding */
+    flex-direction: column;
+    /* Stack vertically */
+    align-items: center;
+    /* Center content */
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  .firstPart .circle {
+    width: 150px;
+    /* Smaller circle */
+    height: 150px;
+    top: 0;
+    /* Position circle above text box */
+    left: 0;
+    /* Center circle with text box */
+    order: 1;
+  }
+
+  .firstPart .textBox {
+    width: 90%;
+    /* Adjust width */
+    height: auto;
+    /* Adjust height to content */
+    margin-left: 0;
+    padding-top: 0px;
+    padding-bottom: 2rempx;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    /* Round corners */
+    order: 3;
+  }
+
+  .firstPart .imageContainer {
+    width: 100%;
+    /* Full-width on mobile */
+    height: auto;
+    /* Auto adjust height */
+    order: 2;
+    margin-top: 4rem;
+    /* Space between image and text box */
+  }
+
+  .firstPart .imageContainer img {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 2rem;
+  }
+
+  /* Second Part */
+  .secondPart {
+    flex-direction: column;
+    /* Stack vertically */
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .secondPart .textBox {
+    width: 90%;
+    /* Adjust width */
+    height: auto;
+    /* Adjust height to content */
+    margin-left: 0;
+    padding-top: 2px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    /* width: 90%; 
+    margin-left: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height: auto;  */
+  }
+
+  .secondPart .imageContainer {
+    width: 100%;
+    /* Full width of container */
+    height: auto;
+    /* Adjust based on content */
+    margin-top: 2rem;
+    /* Space between image and text box */
+    margin-bottom: 2rem;
+  }
+
+  .secondPart .imageContainer img {
+    width: 100%;
+    /* Full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  /* Third Part */
+  .thirdPart {
+    padding-left: 1rem;
+    /* Adjust padding */
+    flex-direction: column;
+    /* Stack vertically */
+    position: relative;
+  }
+
+  .thirdPart .circle {
+    width: 120px;
+    /* Smaller circle */
+    height: 120px;
+    top: 0;
+    left: 0;
+    order: 1;
+  }
+
+  .thirdPart .textBox {
+    width: 90%;
+    /* Adjust width */
+    height: auto;
+    /* Adjust height to content */
+    margin-left: 0;
+    padding-top: 2px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    z-index: 3;
+    order: 3;
+    /* width: 90%; 
+    margin-left: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height: auto; */
+  }
+
+  .thirdPart .imageContainer {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Adjust height */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    order: 2;
+  }
+
+  .thirdPart .imageContainer img {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  /* Fourth Part */
+  .fourthPart {
+    flex-direction: column;
+    /* Stack vertically */
+    padding-top: 3rem;
+  }
+
+  .fourthPart .textBox {
+    width: 90%;
+    /* Adjust width */
+    height: auto;
+    /* Adjust height to content */
+    margin-left: 0;
+    padding-top: 2px;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+    /* width: 90%; 
+    margin-left: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    height: auto; */
+  }
+
+  .fourthPart .imageContainer {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Adjust based on content */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .fourthPart .imageContainer img {
+    width: 100%;
+    /* Full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: 2rem;
+  }
+
+  /* Text Adjustments */
+  .firstPart .textBox .htag,
+  .secondPart .textBox .htag,
+  .thirdPart .textBox .htag,
+  .fourthPart .textBox .htag {
+    color: black;
+    font-size: 1.5rem;
+    /* Reduce font size */
+  }
+
+  .firstPart .textBox .ptag,
+  .secondPart .textBox .ptag,
+  .thirdPart .textBox .ptag,
+  .fourthPart .textBox .ptag {
+    color: black;
+    font-size: 1rem;
+    /* Reduce font size */
+  }
+
+  /* Additional adjustments for image size */
+  .imageContainer img {
+    object-fit: contain;
+    /* Maintain aspect ratio */
+  }
+}
+
+/* ==========================
+  VERY SMALL SCREEN (Mobile Phones)
+  ========================== */
+@media screen and (max-width: 480px) {
+  .mainDiv {
+    flex-direction: column;
+    /* Stack elements vertically */
+    height: auto;
+    /* Allow height to adjust according to content */
+    overflow: visible;
+    /* Allow scrolling */
+  }
+
+  /* Sticky Container */
+  .stickyContainer {
+    position: relative;
+    /* Make sticky container non-sticky on small screens */
+    height: auto;
+  }
+
+  /* Adjust Padding and Margin for Small Phones */
+  .firstPart,
+  .secondPart,
+  .thirdPart,
+  .fourthPart {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .firstPart .textBox,
+  .secondPart .textBox,
+  .thirdPart .textBox,
+  .fourthPart .textBox {
+    width: 100%;
+    /* Full width */
+    margin-left: 0;
+  }
+
+  /* Further reduce circle size for very small screens */
+  .firstPart .circle,
+  .secondPart .circleLine,
+  .thirdPart .circle,
+  .fourthPart .circleLine {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+  }
+
+  .firstPart .circle {
+    left: 0;
+    top: 0;
+  }
+
+  /* Image styling for small screens */
+  .imageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Adjust fonts further for small phones */
+  .firstPart .textBox .htag,
+  .secondPart .textBox .htag,
+  .thirdPart .textBox .htag,
+  .fourthPart .textBox .htag {
+    font-size: 1.2rem;
+    /* Smaller font */
+  }
+
+  .firstPart .textBox .ptag,
+  .secondPart .textBox .ptag,
+  .thirdPart .textBox .ptag,
+  .fourthPart .textBox .ptag {
+    font-size: 0.9rem;
+    /* Smaller font */
+  }
+
+}
+
+/* ============================
+other mobile reposive code
+============================ */
+@media screen and (min-width: 540px) and (max-width: 768px) {
+  .Card {
+    padding: 20px;
+  }
+
+  .firstPart,
+  .secondPart,
+  .thirdPart,
+  .fourthPart {
+    padding: 30px 20px;
+  }
+
+  .textBox {
+    max-width: 450px;
+    min-height: 220px;
+    padding: 25px;
+  }
+
+  .textBox .htag {
+    font-size: 1.8rem;
+  }
+
+  .textBox .ptag {
+    font-size: 1.1rem;
+  }
+
+  .imageContainer {
+    max-width: 350px;
+    height: 280px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Alternating layout for tablet landscape */
+  .firstPart .circle {
+    left: -60px;
+  }
+
+  .firstPart .imageContainer {
+    order: 2;
+  }
+
+  .firstPart .textBox {
+    order: 1;
+  }
+
+  .secondPart .imageContainer {
+    order: 1;
+  }
+
+  .secondPart .textBox {
+    order: 2;
+  }
+
+  .secondPart .circleLine {
+    /* right: -30px; */
+    left: 27rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+  }
+
+  .thirdPart .circle {
+    left: -60px;
+  }
+
+  .thirdPart .imageContainer {
+    order: 2;
+  }
+
+  .thirdPart .textBox {
+    order: 1;
+  }
+
+  .fourthPart .imageContainer {
+    order: 1;
+  }
+
+  .fourthPart .textBox {
+    order: 2;
+  }
+
+  .fourthPart .circleLine {
+    /* right: -40px; */
+    left: 27rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Tablet Landscape - 820x1180, 853x1280, 912x1366 */
+@media screen and (min-width: 820px) and (max-width: 912px) {
+
+  .firstPart,
+  .secondPart,
+  .thirdPart,
+  .fourthPart {
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 40px 30px;
+  }
+
+  .textBox {
+    max-width: 400px;
+    min-height: 250px;
+    padding: 30px;
+  }
+
+  .textBox .htag {
+    font-size: 2rem;
+  }
+
+  .imageContainer {
+    max-width: 320px;
+    height: 350px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Alternating layout for tablet landscape */
+  .firstPart .circle {
+    left: -60px;
+  }
+
+  .firstPart .imageContainer {
+    order: 2;
+  }
+
+  .firstPart .textBox {
+    order: 1;
+  }
+
+  .secondPart .imageContainer {
+    order: 1;
+  }
+
+  .secondPart .textBox {
+    order: 2;
+  }
+
+  .secondPart .circleLine {
+    /* right: -30px; */
+    left: 47rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+  }
+
+  .thirdPart .circle {
+    left: -60px;
+  }
+
+  .thirdPart .imageContainer {
+    order: 2;
+  }
+
+  .thirdPart .textBox {
+    order: 1;
+  }
+
+  .fourthPart .imageContainer {
+    order: 1;
+  }
+
+  .fourthPart .textBox {
+    order: 2;
+  }
+
+  .fourthPart .circleLine {
+    /* right: -40px; */
+    left: 46rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Large Tablet/Small Desktop - 1024x600, 1024x768 */
+@media screen and (min-width: 913px) and (max-width: 1024px) {
+
+  .firstPart,
+  .secondPart,
+  .thirdPart,
+  .fourthPart {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px;
+  }
+
+  .textBox {
+    max-width: 480px;
+    height: 280px;
+    padding: 35px;
+  }
+
+  .textBox .htag {
+    font-size: 2.2rem;
+    padding-top: 1rem;
+  }
+
+  .textBox .ptag {
+    font-size: 1.2rem;
+  }
+
+  .imageContainer {
+    max-width: 380px;
+    height: 400px;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Desktop-like layout for larger tablets */
+  .firstPart {
+    justify-content: flex-end;
+  }
+
+  .firstPart .circle {
+    left: 100px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .secondPart {
+    justify-content: flex-start;
+  }
+
+  .secondPart .circleLine {
+    right: 40px;
+    top: 20px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .thirdPart {
+    justify-content: flex-end;
+  }
+
+  .thirdPart .circle {
+    left: 150px;
+    top: 40px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .fourthPart {
+    justify-content: flex-start;
+  }
+
+  .fourthPart .circleLine {
+    right: 60px;
+    top: 40px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Responsive landscape mode adjustments */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .Card {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .firstPart,
+  .secondPart,
+  .thirdPart,
+  .fourthPart {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+
+  .textBox {
+    min-height: 150px;
+    padding: 15px;
+  }
+
+  .textBox .htag {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+  }
+
+  .imageContainer {
+    height: 200px;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Hover effects - only on larger screens */
+@media (hover: hover) and (pointer: fine) {
+  .textBox:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 4;
+  }
+
+  .imageContainer:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .firstPart .textBox:hover~.circle {
+    transform: scale(0.8) translateX(-50%);
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .imageContainer img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* ---------------footer css ----------------------*/
+/* footerPage.module.css */
+
+/* Main Background */
+.footerMain {
+
+  background-color: #f7f6fd;
+  color: #333;
+}
+
+/* Image Section */
+.footerHeroSection {
+  position: relative;
+  /* margin-bottom: -50px; */
+  margin-bottom: -100px;
+  width: 100%;
+  height: 800px;
+  background-image: url('/3boys.png');
+  background-size: 100% 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footerHeroText {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  padding: 0 40px;
+  margin: 20px;
+  margin-bottom: 3rem;
+  max-width: 80%;
+  line-height: 1.2;
+  white-space: normal;
+}
+
+/* Stats Section */
+.footerStatsSection {
+  margin-top: 0;
+  position: relative;
+  width: 100%;
+  background-color: #e9d8fd;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-radius: 0 0 100px 100px;
+}
+
+.footerStatsText {
+  text-align: center;
+}
+
+.footerstatsNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5f4dee;
+}
+
+.footerstatsLabel {
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+.footerstatsItems {
+  display: flex;
+  flex-direction: row;
+  /* Make them inline (side by side) */
+  justify-content: center;
+  /* Align items centrally */
+  gap: 9rem;
+  padding: 5rem 8rem;
+}
+
+/* ========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+
+
+  .footerHeroSection {
+    margin-bottom: -40px;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .footerHeroText {
+    font-size: 2.5rem;
+    max-width: 90%;
+    margin: 20px;
+  }
+
+
+  .footerStatsSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footerStatsText {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+
+  .footerstatsItems {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .footerHeroSection {
+    height: 300px;
+  }
+
+  .footerHeroText {
+    font-size: 2rem;
+    width: 100%;
+    /* max-width: 200%; */
+    padding-bottom: 45px;
+  }
+
+  .footerStatsSection {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .footerstatsItems {
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .footerStatsText {
+    font-size: 1rem;
+  }
+
+  .footerstatsItems {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+}
+
+/* ===============
+   Footer Section 
+   ==============*/
+
+/* Footer Grid Layout /------*/
+.footer {
+  width: 100%;
+  min-width: 300px;
+  background-color: #6039D2;
+  color: #FFF;
+}
+
+.mainFD {
+  width: 100%;
+  min-width: 300px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.combineThree {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flogo {
+  width: 100%;
+  min-width: none;
+  display: grid;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.textDecore h4 {
+  padding: 5px 0 0 0;
+}
+
+.fresource {
+  width: 100%;
+  justify-content: flex-start;
+  justify-items: right;
+}
+
+.fcity {
+  padding-top: 5px;
+  width: 100%;
+  justify-items: right;
+}
+.ondcLogoDiv{
+  padding-top: 10px;
+}
+.lastMD {
+  padding-top: 5px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+}
+
+.iconAndCopyRight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.iconF {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    min-width: 300px;
+    background-color: #6039D2;
+    color: #FFF;
+  }
+
+  .mainFD {
+    width: 100%;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .combineThree {
+    width: 100%;
+    min-width: 300px;
+    display: grid;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .fresource {
+    width: 100%;
+    padding-top: 10px;
+    justify-content: flex-start;
+    justify-items: left;
+  }
+
+  .fcity {
+    padding-top: 10px;
+    width: 100%;
+    justify-items: left;
+  }
+
+}

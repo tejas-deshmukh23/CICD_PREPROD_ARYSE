@@ -1,0 +1,200 @@
+.container {
+    background-color: #f7f6fd;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(45deg, #6039D2, #D6C8FF);
+
+    /* border: 1px solid red; */
+    /* padding: 0 10px; */
+    /* display: grid; */
+}
+.mainHeaderPart {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    margin: 0 0 30px 0;
+    
+}
+.topchildren {
+    width: 100%;
+    height: auto;
+    height: 90px;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    /* background-color: #6039D2; */
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 100%;
+    /* height: 150px; */
+    margin: 0px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+
+.logo2 {
+    width: auto;
+    height: auto;
+    /* border-radius: 326.24px; */
+    /* border-radius: 50%; */
+    /* margin-top: -20px; */
+
+}
+.card {
+  width: 100%;
+  max-width: 412px;
+  background: linear-gradient(to bottom, #FFFFFF, #D6C8FF);
+  padding: 10px 20px 46px 20px;
+  /* border-bottom-left-radius: 24px; */
+  /* border-bottom-right-radius: 24px; */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  margin-top: 150px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #111;
+  z-index: 3;
+  /* margin-bottom: 25px; */
+}
+.heading{
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.fields {
+    background: #fff;
+    border: 1px solid #6039d2;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-top: 30px; /*50px add*/
+    padding: 10px 25px 15px;
+    display: flex;
+}
+
+/* Error field styling - RED BORDER */
+.errorField {
+    border: 2px solid red !important;
+    box-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+}
+.errorText{
+  position: absolute;
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0%;
+  line-height: 18px;
+}
+
+.fieldName1 {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+.inputfield {
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #191A23;
+}
+
+.fieldName {
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Outfit;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.helperText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000;
+    margin-top: 6px;
+    text-align: center;
+    justify-content: center;
+  }
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+  
+  .slider {
+    appearance: none;
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #dba6ff, #6c4cd2);
+    outline: none;
+    margin: 0 10px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+   
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #9c53ff;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #9c53ff;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+.btnContainer {
+  width: 100%;
+  margin-top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;   
+}
+
+.nextbtn {
+
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: #6039d2;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 11px 37px;
+
+
+}

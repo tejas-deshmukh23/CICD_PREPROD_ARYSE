@@ -1,0 +1,192 @@
+.container {
+  background: #f0f7fc;
+  padding: 20px;
+  border-radius: 8px;
+  /* font-family: Arial, sans-serif; */
+  max-width: 100%;
+  /* margin: 40px auto; */
+}
+
+/* Author Section */
+.authorBox {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.authorTitle {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.authorText {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+/* FAQ Section */
+.faqSection {
+  margin-top: 20px;
+}
+
+.faqHeading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.faqItem {
+  background: white;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.faqQuestion {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-right: 8px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #FFFFFF;
+  height: 25 px;
+  width: 20px;
+  padding-bottom: 3px;
+  background: #000;
+}
+
+.faqAnswer {
+  padding: 0 12px 12px 32px;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* ===============
+   Footer Section 
+   ==============*/
+.footer {
+  width: 100%;
+  min-width: 300px;
+  background-color: #6039D2;
+  color: #FFF;
+}
+
+.mainFD {
+  width: 100%;
+  min-width: 300px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.combineThree {
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flogo {
+  width: 100%;
+  min-width: none;
+  display: grid;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 800;
+}
+.textDecore h4 {
+  padding: 5px 0 0 0;
+}
+
+.fresource {
+  width: 100%;
+  justify-content: flex-start;
+  justify-items: right;
+}
+
+.fcity {
+  padding-top: 5px;
+  width: 100%;
+  justify-items: right;
+}
+.ondcLogoDiv{
+  padding-top: 10px;
+}
+.lastMD {
+  padding-top: 5px;
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+}
+
+.iconAndCopyRight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.iconF {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    width: 100%;
+    min-width: 300px;
+    background-color: #6039D2;
+    color: #FFF;
+  }
+
+  .mainFD {
+    width: 100%;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .combineThree {
+  width: 100%;
+  min-width: 300px;
+  display: grid;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.fresource {
+  width: 100%;
+  padding-top: 10px;
+  justify-content: flex-start;
+  justify-items: left;
+}
+
+.fcity {
+  padding-top: 10px;
+  width: 100%;
+  justify-items: left;
+}
+
+}

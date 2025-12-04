@@ -1,0 +1,476 @@
+/* ────────────────────────
+   Base layout
+────────────────────────── */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+  /* padding: 20px; */
+
+}
+
+.card {
+  width: 432px;
+  /* border-radius: 16px; */
+  background: linear-gradient(135deg, #f26bff 0%, #7b5dff 100%);
+  /* background: linear-gradient(135deg, #f26bff 0%, rgb(151, 125, 227) 100%); */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* border-top-left-radius: 6px;
+  border-top-right-radius: 6px; */
+}
+
+/* ────────────────────────
+   Hero banner
+────────────────────────── */
+.hero {
+  position: relative;
+  /* background: linear-gradient(135deg, #f26bff 0%, #7b5dff 100%); */
+  padding: 24px 20px 10px 20px;
+  min-height: 190px;
+  color: #ffffff;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.backBtn:hover{
+ color:#2f0606;
+ font-size: 15px;
+}
+
+.heroText {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* dots */
+.progressBar {
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.dot,
+.dotActive {
+  align-items: center;
+  padding-left: 10px;
+  width: 28px;
+  height: 6px;
+  border-radius: 2px;
+  background: #ffffff66;
+  cursor: pointer;
+}
+.dotActive {
+  background: #ffffff;
+}
+/* .progressBar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dotActive {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dot:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+/* hero image (touching the form) */
+.imgWrap {
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  width: 180px;
+  height: 170px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ────────────────────────
+   Form container
+────────────────────────── */
+.formBlock {
+  background: #F7F6FD;
+  border-radius: 20px;
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+  padding-top: 24px;
+}
+
+.form {
+  padding: 0 20px 28px 20px;
+  display: flex;
+  flex-direction: column;
+   border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  gap: 14px;
+  background-color: #F7F6FD;
+}
+
+/* ────────────────────────
+   Steps 1 / 2  (separate lines)
+────────────────────────── */
+.steps {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px 18px;
+}
+.stepContainer {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.step {
+  margin-left: 0rem;
+  /* width: 32px; */
+  /* height: 32px; */
+  /* border-radius: 50%; */
+  /* background: #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* .stepActive {
+  background: #7b5dff; 
+  color: white;
+} */
+
+.underLineNO {
+  flex: 1;
+  margin-top: 30px;
+  height: 5px;
+  width: 185px;
+  /* background: #f26bff; */
+  left: -1;
+   transform: translateX(-4%);
+   border-radius: 3px;
+   position: relative;
+  background: #f26bff33; /* हलका base रंग */
+  border-radius: 3px;
+  /* flex: 1;
+  height: 4px;
+  background: #c95b5b;
+  border-radius: 2px;
+  margin: auto 8px 0 8px;
+  position: relative;
+  top: 10px; 
+  left:0;
+  transform: translateX(-60%); */
+  /* top: 42px; */
+}
+.underLineFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #7b5dff;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+  width: 0;
+  z-index: 2;
+}
+
+/* .stepContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.step {
+  same as before
+}
+
+.stepActive {
+  same as before
+}
+
+.stepLine {
+  padding-bottom: 3px;
+  flex: 1;
+  height: 4px;
+  background: #d4d4d4;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-left: 8px;
+}
+
+.stepLineFill {
+  height: 100%;
+  background: #7b5dff;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+} */
+/* ────────────────────────
+   Input fields
+────────────────────────── */
+.field {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 46px 12px 14px;     /* right‑padding for icon        */
+  font-size: 14px;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  background: #ffffff;
+  outline: none;
+}
+
+.input:focus {
+  border-radius: 10px;
+  border-color: #7b5dff;
+  box-shadow: 2px 2px 2px 2px #7b5dff33;
+}
+
+/* right‑side icon */
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  color: #B8B8B8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ────────────────────────
+   Disclaimer / note
+────────────────────────── */
+.note {
+  font-size: 11px;
+  color: #555;
+  line-height: 1.45;
+  margin-bottom: 40px;
+}
+
+.note a {
+  color: #7b5dff;
+  text-decoration: none;
+}
+
+.calc {
+  font-weight: 600;
+}
+
+/* ────────────────────────
+   CTA button
+────────────────────────── */
+.btnContainer{
+    position: fixed;
+    padding: 3px;
+    width: 432px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    transform: translate(-20px); 
+    
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-items: center;
+      z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.nextBtn {
+    /* width: 432px; */
+    width: 395px;
+  /* position: fixed; */
+  /* transform: translate(-1px); */
+  /* transform: translateX(-5%); */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  margin: 3px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 600;
+  background: #6039D2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nextBtn:hover {
+  opacity: 0.9;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .btnContainer {
+    width: 100%;  /* Full width on mobile */
+    padding: 0 10px;  /* Add some padding on the sides */
+  }
+
+  .nextBtn {
+    width: 100%;  /* Make the button fill the width on mobile */
+    max-width: 432px;  /* Set a max-width to prevent it from becoming too wide */
+    margin: 0 auto;  /* Center it */
+  }
+}
+
+@media (max-width: 480px) {
+  .nextBtn {
+    font-size: 14px;  /* Slightly smaller font on very small screens */
+    padding: 12px 0;  /* Adjust padding for smaller screens */
+  }
+}
+
+/* drop Dwon */
+.dropdownContainer {
+  position: relative;
+  margin-bottom: 0.2rem;
+}
+
+.dropdownHeader {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdownHeader:active {
+  border: 2px solid #8ba3f3;
+}
+
+.icon {
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdownList {
+  width: 320px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 6px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+
+.option {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  border-top: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.option:first-child {
+  border-top: none;
+}
+
+.option:hover {
+  background-color: #f3f3f3;
+}
+
+.option input[type='radio'] {
+  accent-color: #7b5dff;
+  width: 16px;
+  height: 16px;
+}
+/* second drop down */
+.dropdownContainer2 {
+  position: relative;
+  margin-bottom: 0.2rem;
+}
+
+.dropdownHeader2 {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdownHeader2:active {
+  border: 2px solid #8ba3f3;
+}
+
+.icon {
+  font-size: 14px;
+  color: #666;
+}
+
+.dropdownList2 {
+  width: 320px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 6px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.option {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  border-top: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.option:first-child {
+  border-top: none;
+}
+
+.option:hover {
+  background-color: #f3f3f3;
+}
+
+.option input[type='radio'] {
+  accent-color: #7b5dff;
+  width: 16px;
+  height: 16px;
+}

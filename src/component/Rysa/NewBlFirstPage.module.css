@@ -1,0 +1,186 @@
+.numberStart {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  */
+  /* width: 432px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative; */
+}
+
+.numberOneDiv {
+    width: 100%;
+  max-width: 432px;
+  /* height: 200px; */
+  padding: 0px 0 0 4px;
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  font-size: 17px;
+  z-index: 1;
+   margin-top: -20px;
+  margin-bottom: -10px; 
+}
+@media screen and (max-width: 480px) {
+  .numberOneDiv {
+      width: 100%;
+  max-width: 432px;
+  /* height: 200px; */
+  padding: 0px 0 0 4px;
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  font-size: 17px;
+  z-index: 1;
+   margin-top: -20px;
+  margin-bottom: -10px; 
+    width: 100%; /* Full width for mobile */
+    /* max-width: 460px;  */
+    font-size: 14px; /* Adjust font size for readability */
+    /* padding: 10px 4px; */
+    margin-top: -20px; /* Removes negative margin for better spacing */
+    margin-bottom: -10px; /* Space between divs */
+  }
+}
+
+.numberTwoDiv {
+  height: calc(100vh - 200px); /* 30px overlap included  calc(100vh - 200px)*/
+  margin-top: -15px; /* to overlap 30px on numberOneDiv */
+  position: relative;
+  z-index: 1;
+   width: 100%;
+  max-width: 432px;
+  background: #F7F6FD;
+  border-radius: 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #111;
+  z-index: 3;
+  margin-bottom: 25px;
+}
+.header {
+  width: 100%;
+  max-width: 432px;
+  /* height: 200px; */
+  padding: 0px 0 0 4px;
+  color: #ffffff;
+  font-weight: 600;
+  /* background: linear-gradient(to right, #f3b2f5 50%, #a78afa); */
+  background: red;
+  font-size: 17px;
+  z-index: 1;
+   /* margin-top: -20px; */
+  margin-bottom: 0px; 
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 12px;
+ }
+
+.listpageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.allnewcardContainer {
+  height: 100vh;
+  width: 100%;
+  /* max-width: 432px; */
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 24px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.newcardContainer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  /* background: linear-gradient(to right, #8ca8e6, #ECDDFE, #FEE1A2); */
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cardLogo {
+  justify-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cardBody {
+  background-color: #ffffff78;
+  border-radius: 15px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.maxAmount {
+  font-size: 15px;
+  color: #777;
+  margin-left: 20px;
+}
+
+.cardInfo {
+  display: flex;
+  gap: 3.5rem;
+  margin: 15px 0 25px;
+}
+
+.infoItem {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #777;
+  border: 1px solid #6a00ff;
+  border-radius: 10px;
+  padding: 3px 6px;
+}
+
+.cardButton {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6039D2;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.cardButton:hover {
+  background-color: #4a00cc;
+}
+

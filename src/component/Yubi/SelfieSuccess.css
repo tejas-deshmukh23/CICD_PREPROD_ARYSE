@@ -1,0 +1,152 @@
+
+
+  .title {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .page-container-ss {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .newfirstcard-container-ddcc {
+      position: relative;
+    
+      margin-bottom: 20%;
+      
+     
+      background-color: #F7F6FD;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 45%;
+      z-index: 1;
+    }
+    .verification-s-text {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 30%;
+      
+    }
+    
+  }
+  @media (max-width: 768px) {
+    .newfirstcard-container-ddcc {
+      position: relative;
+      margin-bottom: 20%;
+      width:80%;
+      margin: 0 auto;
+     
+      background-color: #F7F6FD;
+      
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-bottom: 60%;
+      z-index: 1; /* Place it above the carousel */
+    }
+  
+  }
+  .illustration-s-container {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    margin: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header {
+      justify-content: center;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-top: 50%;
+      margin-bottom: 24px;
+    }
+
+    .illustration-s-container {
+      max-width: 300px;
+    }
+
+  
+  }
+
+  /* Small Mobile Styles */
+  @media (max-width: 375px) {
+
+    .title {
+      display: flex;
+      justify-content: left;
+    }
+
+    .illustration-s-container {
+      max-width: 250px;
+    }
+  }
+  /* SelfieVerifying.css */
+.verification-s-container {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.verification-s-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+
+/* Desktop styles */
+
+
+/* Tablet styles */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .verification-s-content {
+    padding: 2rem;
+  }
+
+  .illustration-s-wrapper {
+    max-width: 600px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  .verification-s-content {
+    padding: 1rem;
+  }
+
+  .verification-s-text {
+    margin: 1.5rem 0;
+  }
+
+  .illustration-s-wrapper {
+    max-width: 400px;
+  }
+
+  .verification-s-illustration {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+}

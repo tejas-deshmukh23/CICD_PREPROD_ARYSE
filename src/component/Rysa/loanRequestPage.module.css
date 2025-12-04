@@ -1,0 +1,164 @@
+.container {
+  max-width: 432px;
+  margin: 0 auto;
+  /* background: #6039d2; */
+  min-height: 100vh;
+  /* border-radius: 15px; */
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; */
+}
+  .headerTop {
+  width: 100%;
+  max-width: 432px;
+  height: 120px;
+  padding: 0px 0 0 4px;
+  color: #ffffff;
+  font-weight: 600;
+  background: #6039d2;
+  /* background: red; */
+  font-size: 17px;
+  z-index: 1;
+   /* margin-top: -20px; */
+  /* margin-bottom: -25px;  */
+  /* border-top-left-radius: 16px; */
+  /* border-top-right-radius: 16px; */
+}
+.headerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* border-radius: 10px 0px 0px 0px; */
+    padding-top: 4px;
+    height: auto;
+    width: auto;
+ }
+
+.header {
+  /* border-top-left-radius: 15px; */
+  /* border-top-right-radius: 15px; */
+  background: transparent;
+  background-color: #F3F4F6;
+  color: #8B5CF6;
+  padding: 20px 24px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -32px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.dropdown {
+    /* color: red; */
+  color: #8B5CF6;
+  transform: scaleX(1.5); 
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.content {
+  padding: 0 24px;
+  /* margin-top: -55px; */
+}
+
+.loanCard {
+  background: white;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  border: 1px solid #E5E7EB;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 20px 12px;
+  border-top: 3px solid #8B5CF6;
+  /* borderbottom */
+  position: relative;
+}
+
+.headerItem {
+  flex: 1;
+}
+
+.headerItem:nth-child(2) {
+  text-align: center;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2937;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.statusActive {
+  color: #10B981;
+}
+
+.statusClosed {
+  color: #EF4444;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.amountSection {
+  flex: 1;
+}
+
+.amount {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-top: 4px;
+}
+
+.viewButton {
+  background: #6366F1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.viewButton:hover {
+  background: #5B5FC7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+}
+
+.viewButton:active {
+  transform: translateY(0);
+}
+/* jkjk */

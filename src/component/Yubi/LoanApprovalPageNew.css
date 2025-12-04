@@ -1,0 +1,318 @@
+.pageContainerloanpage {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+  }
+  .loan-block{
+  width: 432px;
+  /* background-color: red; */
+  background: linear-gradient(to right, #f3b2f5 50%, #a78afa);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: auto;
+  height: 100vh;
+}
+.hdb-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+ .loan-head {
+  margin-top: -20px;
+  margin-bottom: -13px; 
+}
+.cardForm-loan {
+  padding-left: 5rem;
+  padding-top: 30px;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #F7F6FD;
+  min-height: 472px;
+  justify-items: center;
+  height: 90vh;
+}
+.content-loan {
+  padding: 20px;
+}
+/* button css */
+.btnContainer{
+    position: fixed;
+    padding: 3px;
+    width: 432px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    transform: translate(-33px); 
+    justify-items: center;
+      z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+.nextBtn {
+  width: 395px;
+  margin: 3px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 600;
+  background: #6039D2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nextBtn:hover {
+  opacity: 0.9;
+}
+@media (max-width: 480px) {
+  .btnContainer{
+    width: 380px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .nextBtn {
+    width: 335px;
+    padding: 10px 0; 
+    font-size: 13px; 
+  }
+}
+/* button end css */
+.cardContainerloanpage{
+  align-items: center;
+}
+  
+  .label {
+    font-weight: 500;
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .inputBox {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+  }
+  
+  .helperText {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 6px;
+    text-align: center;
+  }
+  
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+  
+  .slider {
+    appearance: none;
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #dba6ff, #6c4cd2);
+    outline: none;
+    margin: 0 10px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+   
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #9c53ff;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #9c53ff;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  
+  
+  .tenureSliderContainer {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .tenureLabels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  
+  .tenureLabels span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    flex: 1;
+  }
+  
+  
+  
+  .tenureSliderContainer .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8B5CF6;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .tenureSliderContainer .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8B5CF6;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .sliderContainer, .tenureSliderContainer {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .sliderLabels, .tenureLabels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+  
+  .sliderLabels span, .tenureLabels span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+  }
+  
+  .tenureLabels {
+    justify-content: space-between;
+  }
+  
+  .tenureLabels span {
+    flex: 1;
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 16px;
+      }
+  }
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 16px;
+          margin: 15px 0 8px;
+      }
+  }
+  h1 {
+      font-size: 16px;
+      margin: 20px 0 10px;
+      color: #333;
+      margin: 10px 0 30px;
+      text-align: center;
+  }
+  .cardContainer h2 {
+      font-size: 16px;
+      margin: 0;
+      font-weight: 500;
+      color: #777777;
+      text-align: center;
+  }
+  .formloanpage{
+    align-content: center;
+    align-items: center;
+  }
+  .form-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #6039D2;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+ 
+  .Long-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+  }
+  /* Add these CSS rules to your existing CSS file */
+
+/* Disabled slider styles */
+.slider:disabled {
+  background: linear-gradient(to right, #d3d3d3, #a8a8a8) !important;
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
+
+.slider:disabled::-webkit-slider-thumb {
+  background: #bbb !important;
+  cursor: not-allowed !important;
+  border: 2px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+.slider:disabled::-moz-range-thumb {
+  background: #bbb !important;
+  cursor: not-allowed !important;
+  border: 2px solid #ddd !important;
+  box-shadow: none !important;
+}
+
+/* Optional: Also make the input field look disabled when loan amount is fixed */
+.inputBox:disabled {
+  background-color: #f5f5f5 !important;
+  color: #999 !important;
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
+
+/* Optional: Style the slider container when disabled */
+.sliderContainer.disabled {
+  opacity: 0.6;
+}
+
+.sliderContainer.disabled span {
+  color: #999 !important;
+}
+  
+  
+  
+  

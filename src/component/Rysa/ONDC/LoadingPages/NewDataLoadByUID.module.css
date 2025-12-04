@@ -1,0 +1,145 @@
+.container {
+        background-color: #f7f6fd;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(to top, #FFFFFF, #D6C8FF);
+    /* border: 1px solid red; */
+    /* padding: 0 10px; */
+    /* display: grid; */
+}
+.mainHeaderPart {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+    margin: 0 0 30px 0;
+    
+}
+.topchildren {
+    width: 100%;
+    height: auto;
+    height: 90px;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    /* background-color: #6039D2; */
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    width: 100%;
+    /* height: 150px; */
+    margin: 25px 0 10px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex
+}
+
+.logo2 {
+    width: auto;
+    height: auto;
+    /* border-radius: 326.24px; */
+    /* border-radius: 50%; */
+
+}
+.textDiv{
+    padding: 0px 20px;
+}
+.textDiv h3{
+font-size: 20px;
+line-height: 100%;
+font-weight: 500;
+color: #000000;
+}
+.textDiv p{
+ font-size: 14px;
+ line-height: 18px;
+ font-weight: 400;
+ color: #000000;
+ margin: 10px 0 30px 0;
+}
+.cardLogo{
+    width: 100px;
+    height: 40px;
+    /* padding: 4px 0px 0px; */
+    overflow: hidden;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lenderInfo{
+    padding: 0px 30px;
+    position: absolute;
+    margin-top: -340px;
+}
+.amount{}
+.amount h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #191A23;
+}
+.amount p{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+.timeAndIntrest{
+    width: 340px;
+    display: flex;
+    gap: 60px;
+    /* justify-content: space-between; */
+    margin: 20px 0px;
+    border-bottom: 2px solid #000000;
+}
+.icontAndText{
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+.icontAndText span{
+ font-size: 14px;
+ line-height: 18px;
+ font-weight: 400;
+ color: #000000;
+}
+.cardIcon{
+    height: 20px;
+    width: 20px;
+    color: #191A23;
+}
+.btn{
+    padding: 11px 37px;
+    background: #FABA44;
+    color: #191A23;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.svgDiv{
+    /* width: 100%; */
+    /* position: absolute; */
+    width: auto;
+    height: 350px;
+    padding: 10px;
+    /* margin-top: -300px; */
+}
+.innerSVG{
+    border: 2px solid black;
+    height: 350px;
+    width: 380px;
+    /* position: absolute; */
+    /* transform: rotateY(20deg); */
+}
+/* ========================================================================================
+=========================================================================================== */

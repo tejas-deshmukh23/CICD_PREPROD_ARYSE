@@ -1,0 +1,651 @@
+.pageCenterWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #FFFFFF, #D6C8FF);
+}
+
+.container{
+    width: 421px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #6039D2;
+    position: relative;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shrinkCircle {
+    width: 260px !important;
+    height: 260px !important;
+    border-radius: 50%;
+    position: fixed;
+    top: 25% !important;
+    left: 50% !important;
+    transform: translate(-50%, 10%) !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+.squreStar{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.squreStar1{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transform: translate(150px, 20px);
+}
+
+.squreStar2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(370px, 40px);
+}
+
+.squreStar3{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(90px, 90px);
+}
+
+.squreStar4{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transform: translate(280px, 180px);
+}
+
+.squreStar5{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transform: translate(330px, 230px);
+}
+
+.squreStar6{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(210px, 250px);
+}
+
+.squreStar7{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(140px, 350px);
+}
+
+.squreStar8{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(320px, 410px);
+}
+
+.squreStar9{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(40px, 410px);
+}
+
+/* small star */
+.smallStar1{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    transform: translate(290px, 70px);
+}
+
+.smallStar2{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    transform: translate(200px, 170px);
+    z-index: 3;
+}
+
+.smallStar3{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    transform: translate(60px, 300px);
+}
+
+.smallStar4{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    transform: translate(345px, 275px);
+}
+
+.smallStar5{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    transform: translate(250px, 320px);
+}
+
+.whiteLines1{
+    background: linear-gradient(#a68af8, #6039d2);
+    border-radius: 50px;
+    width: 28px;
+    height: 180px;
+    position: absolute;
+    transform: translate(210px, 10px);
+}
+
+.whiteLines2{
+    background: linear-gradient(#a68af8, #6039d2);
+    border-radius: 50px;
+    width: 18px;
+    height: 140px;
+    position: absolute;
+    transform: translate(330px, 130px);
+}
+
+.whiteLines3{
+    background: linear-gradient(#a68af8, #6039d2);
+    width: 24px;
+    height: 200px;
+    position: absolute;
+    transform: translate(100px, 220px);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.starDiv{
+    width: 100%;
+    min-width: 360px;
+    position: absolute;
+    bottom: 0;
+    justify-items: center;
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.moveToCenter {
+    bottom: 35% !important;
+    transform: translate(-30px,50%);
+}
+
+.innerstarDiv{
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.star{
+    position: relative;
+    z-index: 3;
+}
+
+.whiteStarLines{
+    width: 80px;
+    height: 105px;
+    background: linear-gradient(to bottom, #A68AF8, #6039D2);
+    position: absolute;
+    transform: translate(85px, -50px);
+    z-index: 1;
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.growLine {
+    height: 35vh !important;
+    transform: translate(85px, calc(-10vh)) !important;
+}
+
+.smallStarbottom{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top:0;
+    transform: translate(70px, 190px);
+    z-index: 1;
+}
+
+.squreStarBottom1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    transform: translate(275px, 215px);
+}
+
+.squreStarBottom2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    transform: translate(20px, 175px);
+}
+
+/* Congratulations Screen */
+/* .congratsScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #D4C5F9, #F5F0FF);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+} */
+.congratsScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;        /* horizontal center */
+    text-align: center;
+}
+
+.showCongrats {
+    opacity: 1;
+    z-index: 10;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* transform: translate(50px, 10px); */
+    transform: translate(60px, -120px);;
+}
+
+/* .congratsContent {
+    text-align: center;
+    padding: 20px;
+    z-index: 3;
+    position: absolute;
+    bottom: 200px;
+} */
+.congratsContent {
+    position: relative;
+    bottom: unset;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.congratsTitle {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.congratsText {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #000000;
+    margin: 4px 0;
+    line-height: 1.5;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+@media only screen and (max-width: 360px) {
+    .container{
+        position: relative;
+        width: 360px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        background-color: #6039D2;
+    }
+
+    .shrinkCircle {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .squreStar1{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(130px, 15px);
+    }
+
+    .squreStar2{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(310px, 40px);
+    }
+
+    .squreStar3{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(60px, 90px);
+    }
+
+    .squreStar4{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        transform: translate(230px, 215px);
+    }
+
+    .squreStar5{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        transform: translate(330px, 230px);
+    }
+
+    .squreStar6{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(180px, 350px);
+    }
+
+    .squreStar7{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(110px, 490px);
+    }
+
+    .squreStar8{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(290px, 550px);
+    }
+
+    .squreStar9{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(40px, 560px);
+    }
+
+    .smallStar1{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(240px, 70px);
+    }
+
+    .smallStar2{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(155px, 210px);
+        z-index: 3;
+    }
+
+    .smallStar3{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(70px, 230px);
+    }
+
+    .smallStar4{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(310px, 345px);
+    }
+
+    .smallStar5{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(220px, 450px);
+    }
+
+    .whiteLines1{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 28px;
+        height: 200px;
+        position: absolute;
+        transform: translate(170px, 25px);
+    }
+
+    .whiteLines2{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 18px;
+        height: 200px;
+        position: absolute;
+        transform: translate(280px, 130px);
+    }
+
+    .whiteLines3{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 24px;
+        height: 150px;
+        position: absolute;
+        transform: translate(100px, 250px);
+    }
+
+    .starDiv{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .innerstarDiv{
+        width: 250px;
+        height: 250px;
+    }
+    .congratsScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;        /* horizontal center */
+    text-align: center;
+}
+
+.showCongrats {
+    opacity: 1;
+    z-index: 10;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* transform: translate(50px, 10px); */
+    transform: translate(60px, -120px);;
+}
+}
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .container{
+        position: relative;
+        width: 360px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        background-color: #6039D2;
+    }
+
+    .shrinkCircle {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .squreStar1{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(130px, 15px);
+    }
+
+    .squreStar2{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(310px, 40px);
+    }
+
+    .squreStar3{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(60px, 90px);
+    }
+
+    .squreStar4{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        transform: translate(230px, 215px);
+    }
+
+    .squreStar5{
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        transform: translate(330px, 230px);
+    }
+
+    .squreStar6{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(180px, 350px);
+    }
+
+    .squreStar7{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(110px, 490px);
+    }
+
+    .squreStar8{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(290px, 550px);
+    }
+
+    .squreStar9{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        transform: translate(40px, 560px);
+    }
+
+    .smallStar1{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(240px, 70px);
+    }
+
+    .smallStar2{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(155px, 210px);
+        z-index: 3;
+    }
+
+    .smallStar3{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(70px, 230px);
+    }
+
+    .smallStar4{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(310px, 345px);
+    }
+
+    .smallStar5{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(220px, 450px);
+    }
+
+    .whiteLines1{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 28px;
+        height: 200px;
+        position: absolute;
+        transform: translate(170px, 25px);
+    }
+
+    .whiteLines2{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 18px;
+        height: 200px;
+        position: absolute;
+        transform: translate(280px, 130px);
+    }
+
+    .whiteLines3{
+        background: linear-gradient(#a68af8, #6039d2);
+        border-radius: 50px;
+        width: 24px;
+        height: 150px;
+        position: absolute;
+        transform: translate(100px, 250px);
+    }
+
+    .starDiv{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .innerstarDiv{
+        width: 250px;
+        height: 250px;
+    }
+    .congratsScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;        /* horizontal center */
+    text-align: center;
+}
+
+.showCongrats {
+    opacity: 1;
+    z-index: 10;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* transform: translate(50px, 10px); */
+    transform: translate(60px, -190px);;
+}
+.moveToCenter {
+    bottom: 35% !important;
+    transform: translate(0px,30%);
+}
+}
